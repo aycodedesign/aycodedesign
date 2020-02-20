@@ -20,8 +20,8 @@ body .logo {
 body h1 {
   font-size: 5rem;
   color: white;
-  position: absolute;
-  bottom: 20%;
+  position: fixed;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%);
   font-weight: 600;
