@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Kanit:300,600&display=swap");
-
 body {
-  /* background-image: url("../img/bg2.png"); */
-  background-image: url("../img/bg3-min.png");
+  background-image: url("../img/bg-split.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Kanit", sans-serif;
 }
-
 body .logo {
   position: absolute;
   display: block;
@@ -16,18 +15,16 @@ body .logo {
   left: 50%;
   transform: translateX(-50%);
 }
-
 body h1 {
   font-size: 5rem;
   color: white;
-  position: fixed;
-  top: 60%;
+  position: absolute;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   font-weight: 600;
   letter-spacing: 0.25rem;
 }
-
 body h3 {
   color: white;
   font-weight: 300;
@@ -39,9 +36,8 @@ body h3 {
 }
 
 @media only screen and (max-width: 700px) {
-
   html,
-  body {
+body {
     overflow-x: hidden !important;
   }
 
@@ -49,7 +45,6 @@ body h3 {
     background-size: cover;
     background-attachment: fixed;
   }
-
   body .logo {
     display: block;
     margin-left: auto;
@@ -59,11 +54,9 @@ body h3 {
     left: 50%;
     transform: translateX(-50%);
   }
-
   body .img {
     max-width: 100%;
   }
-
   body h1 {
     font-size: 3rem;
     text-align: center;
