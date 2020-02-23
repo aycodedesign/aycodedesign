@@ -42,7 +42,9 @@ body {
   }
 
   body {
+    background-image: url("../img/bg-split.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
   }
   body .logo {
