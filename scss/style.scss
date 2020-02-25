@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Kanit:300,600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Kanit:300,600&display=swap");
 
 body {
-  background-image: url("../img/bg-split.jpg");
+  background-image: url("../img/bg-triangle.png");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
 
   .logo {
     position: absolute;
@@ -25,7 +25,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     font-weight: 600;
-    letter-spacing: .25rem;
+    letter-spacing: 0.25rem;
   }
 
   h3 {
@@ -40,11 +40,9 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
-
   html,
   body {
     overflow-x: hidden !important;
-
   }
 
   body {
