@@ -990,13 +990,13 @@ button:focus {
 /* ==========================================================================
    Portfolio Section
    ========================================================================== */
-#portfolios {
+#portfolio {
   background: #f9f9f9;
 }
-#portfolios .mix {
+#portfolio .mix {
   padding: 0px;
 }
-#portfolios .portfolio-item {
+#portfolio .portfolio-item {
   padding: 10px;
 }
 
