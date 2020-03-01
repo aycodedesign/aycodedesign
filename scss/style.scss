@@ -1,15 +1,13 @@
 /* ==========================================================================
    1. IMPORT GOOGLE FONTS
    ========================================================================== */
-@import "https://fonts.googleapis.com/css?family=Montserrat:500,700|Open+Sans";
+@import url("https://fonts.googleapis.com/css?family=Kanit:300,600&display=swap");
 
 /* ==========================================================================
    2. GENERAL
    ========================================================================== */
 
-
 @-webkit-keyframes "sk-bounce" {
-
   0%,
   100% {
     -webkit-transform: scale(0);
@@ -21,7 +19,6 @@
 }
 
 @keyframes "sk-bounce" {
-
   0%,
   100% {
     transform: scale(0);
@@ -35,10 +32,10 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #546E7A;
+  font-family: "Kanit", sans-serif;
+  color: #546e7a;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   background: #fff;
   overflow-x: hidden;
 }
@@ -49,26 +46,26 @@ html {
 
 p {
   font-size: 14px;
-  color: #546E7A;
+  color: #546e7a;
   line-height: 26px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Kanit", sans-serif;
   margin-bottom: 0;
 }
 
 a {
   &:hover {
-    color: #F97794;
+    color: #f97794;
     text-decoration: none;
     outline: none;
   }
 
   &:focus {
-    color: #F97794;
+    color: #f97794;
     text-decoration: none;
     outline: none;
   }
 
-  color: #F97794;
+  color: #f97794;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -90,37 +87,37 @@ a {
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  //  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   color: #263238;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  //  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   color: #263238;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  //  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   color: #263238;
 }
 
 h4 {
-  font-family: 'Montserrat', sans-serif;
+  //  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   color: #263238;
 }
 
 h5 {
-  font-family: 'Montserrat', sans-serif;
+  //  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   color: #263238;
 }
 
@@ -138,7 +135,7 @@ ul {
 }
 
 .bg-default {
-  background: #F97794 !important;
+  background: #f97794 !important;
 }
 
 /* ==========================================================================
@@ -158,18 +155,18 @@ ul {
     font-size: 36px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    //  font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     color: #263238;
     position: relative;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -8px;
       width: 80px;
       height: 2px;
-      background: #F97794;
+      background: #f97794;
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;
       transition: 0.3s;
@@ -180,8 +177,8 @@ ul {
     font-size: 60px;
     color: rgba(0, 0, 0, 0.07);
     z-index: 2;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    //  font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     text-transform: capitalize;
     position: absolute;
     top: 7px;
@@ -189,7 +186,6 @@ ul {
     width: 100%;
   }
 }
-
 
 /* ==========================================================================
    2.2 Buttons
@@ -199,7 +195,7 @@ ul {
   font-size: 14px;
   padding: 10px 30px;
   border-radius: 30px;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
@@ -226,7 +222,7 @@ ul {
 }
 
 .btn-common {
-  background-color: #F97794;
+  background-color: #f97794;
   position: relative;
   z-index: 1;
   padding: 12px 32px;
@@ -241,7 +237,7 @@ ul {
   overflow: hidden;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 100%;
@@ -271,7 +267,7 @@ ul {
 
   &:hover {
     color: #ffffff;
-    background-color: #F97794;
+    background-color: #f97794;
   }
 }
 
@@ -295,7 +291,6 @@ button {
 .clear {
   clear: both;
 }
-
 
 /* ==========================================================================
    2.3 Social Icons
@@ -335,80 +330,80 @@ button {
 
 .facebook {
   a {
-    color: #4867AA;
+    color: #4867aa;
 
     &:hover {
-      background: #4867AA;
+      background: #4867aa;
     }
   }
 }
 
 .twitter {
   a {
-    color: #1DA1F2;
+    color: #1da1f2;
 
     &:hover {
-      background: #1DA1F2;
+      background: #1da1f2;
     }
   }
 }
 
 .google-plus {
   a {
-    color: #DD4D42;
+    color: #dd4d42;
 
     &:hover {
-      background: #DD4D42;
+      background: #dd4d42;
     }
   }
 }
 
 .youtube {
   a {
-    color: #DF2926;
+    color: #df2926;
 
     &:hover {
-      background: #DF2926;
+      background: #df2926;
     }
   }
 }
 
 .linkedin {
   a {
-    color: #007BB6;
+    color: #007bb6;
 
     &:hover {
-      background: #007BB6;
+      background: #007bb6;
     }
   }
 }
 
 .pinterest {
   a {
-    color: #BD081C;
+    color: #bd081c;
 
     &:hover {
-      background: #BD081C;
+      background: #bd081c;
     }
   }
 }
 
 .dribbble {
   a {
-    color: #EA4C89;
+    color: #ea4c89;
 
     &:hover {
-      background: #EA4C89;
+      background: #ea4c89;
     }
   }
 }
 
 .behance {
   a {
-    color: #0B7CFF;
+    color: #0b7cff;
 
     &:hover {
-      background: #0B7CFF;
+      background: #0b7cff;
     }
   }
 }
@@ -439,30 +434,29 @@ button {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #F97794;
+  background-color: #f97794;
   opacity: 0.6;
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
 }
 
 .double-bounce2 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #F97794;
+  background-color: #f97794;
   opacity: 0.6;
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
 }
-
 
 /* ========================================================================== 
   -2.5 Scroll To Up 
@@ -483,7 +477,7 @@ button {
     font-size: 14px;
     text-align: center;
     border-radius: 30px;
-    background-color: #F97794;
+    background-color: #f97794;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -501,11 +495,10 @@ button {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #F97794;
+  background: #f97794;
   opacity: 0.5;
   filter: alpha(opacity=80);
 }
-
 
 /* ==========================================================================
    Navbar Style
@@ -558,13 +551,13 @@ button {
 
     &:hover {
       cursor: pointer;
-      color: #F97794;
+      color: #f97794;
     }
   }
 
   .logo-menu {
     a {
-      color: #F97794;
+      color: #f97794;
     }
   }
 
@@ -573,12 +566,12 @@ button {
       color: #263238 !important;
 
       &:hover {
-        color: #F97794 !important;
+        color: #f97794 !important;
       }
     }
 
     .active {
-      color: #F97794 !important;
+      color: #f97794 !important;
     }
   }
 
@@ -599,8 +592,8 @@ button {
 }
 
 .bg-white {
-  background-color: #fff !important;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 255, 255, 0) !important;
+  // box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   z-index: 999;
   padding: 5px;
 
@@ -609,13 +602,13 @@ button {
 
     &:hover {
       cursor: pointer;
-      color: #F97794;
+      color: #f97794;
     }
   }
 
   .logo-menu {
     a {
-      color: #F97794;
+      color: #f97794;
     }
   }
 
@@ -624,12 +617,12 @@ button {
       color: #263238 !important;
 
       &:hover {
-        color: #F97794 !important;
+        color: #f97794 !important;
       }
     }
 
     .active {
-      color: #F97794 !important;
+      color: #f97794 !important;
     }
   }
 }
@@ -648,13 +641,13 @@ button {
       position: relative;
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 0;
         width: 0;
         height: 2px;
-        background: #F97794;
+        background: #f97794;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         transition: 0.3s;
@@ -665,15 +658,15 @@ button {
           width: 50%;
         }
 
-        color: #F97794;
+        color: #f97794;
 
         &:before {
-          color: #F97794;
+          color: #f97794;
         }
       }
 
       &:focus {
-        color: #F97794;
+        color: #f97794;
       }
     }
 
@@ -682,32 +675,32 @@ button {
         width: 50%;
       }
 
-      >.nav-link {
-        color: #F97794;
+      > .nav-link {
+        color: #f97794;
       }
     }
 
     .nav-link.active {
-      color: #F97794;
+      color: #f97794;
 
       &:before {
-        color: #F97794;
+        color: #f97794;
       }
     }
 
     .nav-link.open {
-      color: #F97794;
+      color: #f97794;
     }
 
     .open {
-      >.nav-link {
-        color: #F97794;
+      > .nav-link {
+        color: #f97794;
       }
     }
   }
 
   .navbar-toggler {
-    background: #F97794;
+    background: #f97794;
     border-radius: 0px;
     margin: 5px;
     cursor: pointer;
@@ -718,8 +711,8 @@ button {
     }
 
     &:active {
-      border: 1px solid #F97794;
-      color: #F97794;
+      border: 1px solid #f97794;
+      color: #f97794;
     }
   }
 }
@@ -738,7 +731,6 @@ button {
   transition: 0.6s;
 }
 
-
 /* ==========================================================================
    Hero Area
    ========================================================================== */
@@ -756,7 +748,7 @@ button {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: #F97794;
+    background: #f97794;
     opacity: 0.7;
   }
 
@@ -802,7 +794,7 @@ button {
       transition: all 0.2s linear;
 
       &:hover {
-        color: #F97794;
+        color: #f97794;
       }
     }
   }
@@ -817,7 +809,6 @@ button {
     max-width: 100%;
   }
 }
-
 
 /* ==========================================================================
  Hero Production version
@@ -853,13 +844,13 @@ button {
       color: #fff;
       font-size: 42px;
       margin-bottom: 30px;
-      font-weight: 700;
+      font-weight: 600;
     }
 
     h4 {
       font-size: 18px;
       color: #fff;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 30px;
       letter-spacing: 0.5px;
       margin-bottom: 20px;
@@ -895,7 +886,7 @@ button {
           }
 
           &:before {
-            content: '';
+            content: "";
             width: 4px;
             height: 4px;
             background: #fff;
@@ -917,7 +908,7 @@ button {
         }
 
         &:before {
-          content: '';
+          content: "";
           width: 40px;
           height: 1px;
           background: #f1f1f1;
@@ -927,7 +918,7 @@ button {
         }
 
         &:after {
-          content: '';
+          content: "";
           width: 40px;
           height: 1px;
           background: #f1f1f1;
@@ -954,7 +945,6 @@ button {
   }
 }
 
-
 /* ==========================================================================
    Video Background
    ========================================================================== */
@@ -968,7 +958,7 @@ button {
 
     h1 {
       color: #fff;
-      font-size: 50px;
+      font-size: 5rem;
       font-weight: 300;
       margin-bottom: 25px;
       line-height: 70px;
@@ -977,7 +967,7 @@ button {
     p {
       font-size: 14px;
       color: #fff;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 30px;
       letter-spacing: 0.5px;
     }
@@ -1000,12 +990,11 @@ button {
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        color: #F97794;
+        color: #f97794;
       }
     }
   }
 }
-
 
 /* ==========================================================================
   About Section Style
@@ -1026,7 +1015,7 @@ button {
       transition: all 0.3s ease-in-out;
 
       i {
-        color: #F97794;
+        color: #f97794;
         display: inline-block;
         font-size: 36px;
         margin-bottom: 20px;
@@ -1058,7 +1047,6 @@ button {
   }
 }
 
-
 /* ==========================================================================
   About Area
   ========================================================================== */
@@ -1087,7 +1075,6 @@ button {
   }
 }
 
-
 /* ==========================================================================
    Clients 
    ========================================================================== */
@@ -1098,18 +1085,18 @@ button {
   .client-item-wrapper {
     text-align: center;
     margin: 0 5px;
-    -moz-transition: all .6s ease;
-    -webkit-transition: all .6s ease;
-    transition: all .6s ease;
+    -moz-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
   }
 
   #clients-scroller {
     img {
       &:hover {
-        -moz-transition: all .6s ease;
-        -webkit-transition: all .6s ease;
-        transition: all .6s ease;
-        opacity: 1.0;
+        -moz-transition: all 0.6s ease;
+        -webkit-transition: all 0.6s ease;
+        transition: all 0.6s ease;
+        opacity: 1;
       }
     }
 
@@ -1118,7 +1105,6 @@ button {
     }
   }
 }
-
 
 /* ==========================================================================
     call to action
@@ -1157,7 +1143,6 @@ button {
   }
 }
 
-
 /* ==========================================================================
  Video promo Style
  ========================================================================== */
@@ -1194,7 +1179,6 @@ button {
   }
 }
 
-
 /* ==========================================================================
    Portfolio Section
    ========================================================================== */
@@ -1222,8 +1206,8 @@ button {
   padding: 0px 0px 20px;
 
   .active {
-    color: #F97794 !important;
-    border-color: #F97794;
+    color: #f97794 !important;
+    border-color: #f97794;
     background: transparent;
   }
 
@@ -1254,7 +1238,7 @@ button {
 
   .single-content {
     background-color: rgba(22, 26, 39, 0.7);
-    opacity: 0.90;
+    opacity: 0.9;
     height: 100%;
     left: 0;
     opacity: 0;
@@ -1308,7 +1292,6 @@ button {
   }
 }
 
-
 /* Services Item */
 
 .item-boxes {
@@ -1326,7 +1309,7 @@ button {
     i {
       font-size: 30px;
       line-height: 60px;
-      color: #F97794;
+      color: #f97794;
     }
   }
 
@@ -1384,43 +1367,43 @@ button {
 
   .color-1 {
     i {
-      background: #FAE3E3;
-      color: #D82928 !important;
+      background: #fae3e3;
+      color: #d82928 !important;
     }
   }
 
   .color-2 {
     i {
-      background: #E6F8ED;
-      color: #57D283 !important;
+      background: #e6f8ed;
+      color: #57d283 !important;
     }
   }
 
   .color-3 {
     i {
-      background: #E3EAFA;
-      color: #457BF4 !important;
+      background: #e3eafa;
+      color: #457bf4 !important;
     }
   }
 
   .color-4 {
     i {
-      background: #F3EAD6;
+      background: #f3ead6;
       color: #f1a90a !important;
     }
   }
 
   .color-5 {
     i {
-      background: #E7E6FF;
-      color: #7271FF !important;
+      background: #e7e6ff;
+      color: #7271ff !important;
     }
   }
 
   .color-6 {
     i {
-      background: #DEDEDE;
-      color: #35393D !important;
+      background: #dedede;
+      color: #35393d !important;
     }
   }
 
@@ -1436,7 +1419,7 @@ button {
         color: #272727;
 
         &:hover {
-          color: #F97794;
+          color: #f97794;
         }
       }
     }
@@ -1493,7 +1476,7 @@ button {
         font-size: 32px;
         text-align: center;
         margin-bottom: 30px;
-        color: #F97794;
+        color: #f97794;
         transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -webkit-transition: all 0.3s ease-in-out;
@@ -1511,13 +1494,12 @@ button {
         color: #272727;
 
         &:hover {
-          color: #F97794;
+          color: #f97794;
         }
       }
     }
   }
 }
-
 
 /* ==========================================================================
    Featured Section Start
@@ -1532,7 +1514,7 @@ button {
 
     i {
       font-size: 30px;
-      color: #F97794;
+      color: #f97794;
       text-align: center;
       float: left;
       margin-right: 25px;
@@ -1549,7 +1531,7 @@ button {
       font-size: 86px;
       color: rgba(0, 0, 0, 0.07);
       z-index: 2;
-      font-weight: 400;
+      font-weight: 300;
       text-transform: capitalize;
       position: absolute;
       top: 0px;
@@ -1572,7 +1554,6 @@ button {
     }
   }
 }
-
 
 /* ==========================================================================
  Team Section
@@ -1637,7 +1618,7 @@ button {
         line-height: 34px;
         text-align: center;
         width: 34px;
-        color: #F97794;
+        color: #f97794;
         font-size: 14px;
         background: #fff;
         border-radius: 50px;
@@ -1725,7 +1706,7 @@ button {
           color: #484848;
 
           &:hover {
-            color: #F97794;
+            color: #f97794;
           }
         }
       }
@@ -1741,7 +1722,7 @@ button {
     }
 
     span {
-      color: #F97794;
+      color: #f97794;
     }
   }
 }
@@ -1780,7 +1761,7 @@ button {
 
     .owl-page.active {
       span {
-        background: #F97794;
+        background: #f97794;
       }
     }
   }
@@ -1789,13 +1770,12 @@ button {
     .owl-page {
       &:hover {
         span {
-          background: #F97794;
+          background: #f97794;
         }
       }
     }
   }
 }
-
 
 /* ==========================================================================
   Pricing Table
@@ -1808,7 +1788,7 @@ button {
   border: 1px solid #eaeaea;
   text-align: center;
   border-radius: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1822,7 +1802,7 @@ button {
   .pricing-details {
     h2 {
       font-size: 18px;
-      color: #546E7A;
+      color: #546e7a;
       font-weight: 500;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -1841,8 +1821,8 @@ button {
       span {
         font-size: 12px;
         line-height: 15px;
-        font-weight: 400;
-        color: #A2A2A2;
+        font-weight: 300;
+        color: #a2a2a2;
       }
     }
 
@@ -1869,7 +1849,6 @@ button {
   -moz-transform: scale3d(1.1, 1.1, 1.1);
   transform: scale3d(1.1, 1.1, 1.1);
 }
-
 
 /* ==========================================================================
   Slider
@@ -1899,7 +1878,7 @@ button {
 
       h2 {
         font-size: 80px;
-        font-weight: 700;
+        font-weight: 600;
         color: #fff;
       }
 
@@ -1946,7 +1925,7 @@ button {
       color: #fff;
       font-size: 24px;
       display: inline-block;
-      background: #F97794;
+      background: #f97794;
       border-radius: 30px;
       -webkit-transition: all 0.2s linear;
       -moz-transition: all 0.2s linear;
@@ -1969,7 +1948,7 @@ button {
       color: #fff;
       font-size: 24px;
       display: inline-block;
-      background: #F97794;
+      background: #f97794;
       border-radius: 30px;
       -webkit-transition: all 0.2s linear;
       -moz-transition: all 0.2s linear;
@@ -2022,7 +2001,7 @@ button {
 .contents {
   p {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 50px;
   }
 
@@ -2092,7 +2071,7 @@ button {
         color: #263238;
 
         &:hover {
-          color: #F97794;
+          color: #f97794;
         }
       }
     }
@@ -2115,12 +2094,11 @@ button {
       color: #999;
 
       &:hover {
-        color: #F97794;
+        color: #f97794;
       }
     }
   }
 }
-
 
 /* ==========================================================================
     Single Page Style
@@ -2128,7 +2106,7 @@ button {
 
 #blog-single {
   padding: 80px 0;
-  background: #ECF0F1;
+  background: #ecf0f1;
 
   .blog-post {
     background: #fff;
@@ -2186,7 +2164,7 @@ button {
     padding: 5px;
     border-radius: 3px;
     background: #ffffff;
-    border: 1px dashed #346AFE;
+    border: 1px dashed #346afe;
   }
 
   .comment-author {
@@ -2218,13 +2196,12 @@ button {
         color: #fff;
 
         &:hover {
-          color: #F97794;
+          color: #f97794;
         }
       }
     }
   }
 }
-
 
 /* ==========================================================================
    Contact Us
@@ -2243,7 +2220,7 @@ button {
   transition: all 0.3s;
 
   &:focus {
-    border: 1px solid #F97794;
+    border: 1px solid #f97794;
     outline: none;
     box-shadow: none;
   }
@@ -2262,7 +2239,7 @@ textarea {
 
   i {
     font-size: 20px;
-    color: #F97794;
+    color: #f97794;
   }
 
   h5 {
@@ -2298,7 +2275,6 @@ textarea {
   }
 }
 
-
 /* Contact Map */
 #conatiner-map {
   width: 100%;
@@ -2317,7 +2293,7 @@ textarea {
 .toggle-map {
   height: 5px;
   width: 100%;
-  background-color: #F97794;
+  background-color: #f97794;
   bottom: 0px;
   text-align: center;
   position: absolute;
@@ -2331,7 +2307,7 @@ textarea {
     -webkit-border-radius: 100%;
     border-radius: 100%;
     background-color: #fff;
-    border: #F97794 3px solid;
+    border: #f97794 3px solid;
     position: relative;
     top: -46px;
 
@@ -2357,7 +2333,7 @@ textarea {
   transition: all 0.3s;
   z-index: 101;
   width: 100%;
-  border-top: #F97794 3px solid;
+  border-top: #f97794 3px solid;
 }
 
 #google-map.panel-show {
@@ -2366,7 +2342,6 @@ textarea {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 
 /* ==========================================================================
   19. Subscribe Style
@@ -2387,7 +2362,7 @@ textarea {
 
       i {
         font-size: 30px;
-        color: #F97794;
+        color: #f97794;
       }
     }
 
@@ -2449,7 +2424,7 @@ textarea {
       &:focus {
         color: #212121;
         background-color: #fff;
-        border-color: #F97794;
+        border-color: #f97794;
         box-shadow: none;
         outline: 0;
       }
@@ -2463,7 +2438,6 @@ textarea {
     }
   }
 }
-
 
 /* ==========================================================================
    Footer Style
@@ -2482,7 +2456,7 @@ footer {
   .footer-Content {
     background-color: #ffffff;
     padding: 60px 0;
-    color: #546E7A;
+    color: #546e7a;
   }
 
   .menu {
@@ -2492,10 +2466,10 @@ footer {
       padding-bottom: 12px;
 
       a {
-        color: #546E7A;
+        color: #546e7a;
 
         &:hover {
-          color: #F97794;
+          color: #f97794;
         }
       }
     }
@@ -2508,7 +2482,7 @@ footer {
   margin-bottom: 10px;
 
   p {
-    color: #546E7A;
+    color: #546e7a;
   }
 }
 
@@ -2530,10 +2504,10 @@ footer {
       display: block;
 
       a {
-        color: #546E7A;
+        color: #546e7a;
 
         &:hover {
-          color: #F97794;
+          color: #f97794;
         }
       }
     }
@@ -2564,7 +2538,7 @@ footer {
     margin-right: 12px;
 
     a {
-      background-color: #F97794;
+      background-color: #f97794;
       border-radius: 50%;
       color: #fff;
       height: 32px;
@@ -2572,9 +2546,9 @@ footer {
       text-align: center;
       width: 32px;
       display: inline-block;
-      -webkit-transition: all .4s ease-in-out;
-      -moz-transition: all .4s ease-in-out;
-      transition: all .4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
     }
 
     .facebook {
@@ -2607,34 +2581,33 @@ footer {
   background-color: #ffffff;
   padding: 20px 0 10px;
   border-top: 1px solid #eaeaea;
-  color: #546E7A;
+  color: #546e7a;
 
   p {
     margin-bottom: 0;
     line-height: 40px;
 
     a {
-      color: #546E7A;
+      color: #546e7a;
 
       &:hover {
-        color: #F97794;
+        color: #f97794;
       }
     }
   }
 
   .nav-inline {
     .nav-link {
-      color: #546E7A;
+      color: #546e7a;
       padding: 10px 0;
       margin-left: 10px;
 
       &:hover {
-        color: #F97794;
+        color: #f97794;
       }
     }
   }
 }
-
 
 /* ==========================================================================
  Counter Section Style
@@ -2664,7 +2637,7 @@ footer {
       h3 {
         font-size: 40px;
         color: #fff;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 40px;
       }
 
@@ -2689,7 +2662,7 @@ footer {
 
     i {
       font-size: 40px;
-      color: #F97794;
+      color: #f97794;
     }
   }
 
