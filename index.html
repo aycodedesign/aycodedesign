@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FAVICON -->
+    <!-- ========== FAVICON ========== -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -42,7 +42,7 @@
     />
     <meta name="msapplication-TileColor" content="#21bcf3" />
     <meta name="theme-color" content="#21bcf3" />
-    <!-- END FAVICON -->
+    <!-- ========== END FAVICON ========== -->
 
     <link
       rel="stylesheet"
@@ -56,23 +56,143 @@
 
   <body>
     <header>
+      <!-- ========== MODAL ========== -->
+
+      <div
+        class="modal fade"
+        id="exampleModal2"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel2"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Modal sideout normal
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== TOP NAVBAR ========== -->
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar6"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse collapse justify-content-stretch"
+          id="navbar6"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="//codeply.com">Codeply</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="modal"
+                data-target="#exampleModal2"
+                href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- ========== BOTTOM NAVBAR ========== -->
+
+      <nav class="navbar navbar-expand-sm fixed-bottom">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCustom"
+        >
+          <i class="fa fa-bars fa-lg py-1 text-white"></i>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarCustom">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/aycodedesign/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/aycodedesign"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/aycode.design/"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- ========== HERO ========== -->
+
       <div class="overlay"></div>
+
       <video
         playsinline="playsinline"
         autoplay="autoplay"
         muted="muted"
         loop="loop"
       >
-        <source
-          src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
-          type="video/mp4"
-        />
+        <source src="./img/wave4.webm" type="video/mp4" />
       </video>
+
       <div class="container h-100">
         <div class="d-flex h-100 text-center align-items-center">
           <div class="w-100 text-white">
-            <h1 class="display-3">Video Header</h1>
-            <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+            <img id="logo" src="./img/logo-horizontal.svg" alt="aycd logo" />
           </div>
         </div>
       </div>
@@ -107,9 +227,10 @@
       </div>
     </section>
 
+    <script src="./js/script.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
     <script

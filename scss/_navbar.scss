@@ -1,0 +1,12 @@
+nav {
+  .nav-link {
+    color: $white !important;
+    padding-left: 1rem !important;
+    padding-right: 2rem !important;
+  }
+
+  a:hover,
+  a:active {
+    color: red !important;
+  }
+}
