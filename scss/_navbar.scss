@@ -5,8 +5,60 @@ nav {
     padding-right: 2rem !important;
   }
 
-  a:hover,
-  a:active {
-    color: red !important;
+  // TRIAL
+  // .navbar-nav {
+  //   list-style: none;
+  //   padding: 0;
+  //   white-space: nowrap;
+  // }
+
+  // #navbar-nav > li {
+  //   display: inline-block;
+  //   margin: 0 100px;
+  // }
+
+  .navbar-nav > li > a {
+    text-decoration: none;
+    color: #000;
+    // position: relative;
+  }
+
+  .nav-item:hover:after {
+    content: "\25CF";
+    display: block;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-item::after {
+    content: "\25CF";
+    opacity: 0;
+    color: red;
+    // display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5px;
+    height: 5px;
+  }
+
+  // TRIAL
+
+  // a:hover:after,
+  // a:active {
+  //   // color: black !important;
+  //   // content: url("../img/circle.png");
+  //   // background-position: 0 100%;
+  //   // padding-top: 50px;
+  //   content: "\25CF";
+  //   position: relative;
+  //   top: 1.25em;
+  //   right: 50%;
+  //   // width: 10px;
+  //   // margin-left: 0px;
+  //   color: $white;
+  // }
+
+  .top-nav {
   }
 }
