@@ -12,16 +12,42 @@
       border-bottom: none;
     }
 
-    .modal-footer {
+    .modal-body {
       border-top: none;
+
+      a {
+        color: $white;
+
+        &:hover {
+          color: $cyan;
+          text-decoration: none;
+          transition: color 0.5s ease-in-out;
+        }
+      }
+
+      .btn-primary {
+        color: $white;
+        background-color: transparent;
+        border-color: $white;
+        border-width: thin;
+
+        &:hover {
+          background-color: transparent;
+          color: $white;
+          border-color: $cyan;
+          transition: border-color 0.5s ease;
+        }
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        border-color: transparent;
+      }
+
+      button:hover {
+        color: $cyan;
+        transition: color 0.5 ease;
+      }
     }
   }
-}
-
-//BUTTONS
-.btn-primary {
-  color: $white;
-  background-color: transparent;
-  border-color: $cyan;
-  border-width: medium;
 }
