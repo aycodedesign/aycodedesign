@@ -104,6 +104,7 @@ body {
     font: inherit;
     padding: 1.5em;
     height: 4em;
+    width: 100%;
     position: relative;
   }
 }
@@ -195,6 +196,12 @@ body {
 }
 .modal-dialog-slideout .modal-header h5 {
   float: left;
+}
+
+.floating-label-field#description {
+  height: 10em;
+  // width: 100%;
+  white-space: normal;
 }
 
 @media (pointer: coarse) and (hover: none) {
