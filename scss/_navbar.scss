@@ -23,7 +23,9 @@ nav {
     left: 50%;
     width: 30px;
     height: 30px;
+    // border: 4px solid $cyan;
     border: 4px solid $gray;
+
     transform: translateX(-50%) translateY(-50%) scale(0.8);
     border-radius: 50%;
     background: transparent;
@@ -46,5 +48,58 @@ nav {
   div.circleBehind a:hover:after {
     opacity: 1;
     transform: translateX(-50%) translateY(-50%) scale(1.3);
+  }
+
+  /* Ilin logo effect */
+  .link--ilin {
+    font-weight: $thick-weight;
+    text-transform: uppercase;
+    line-height: 1.7;
+    color: $gray !important;
+    font-size: larger;
+    letter-spacing: 3px;
+    overflow: hidden;
+  }
+
+  .link--ilin span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+  }
+
+  .link--ilin:hover span:first-of-type {
+    color: $white;
+  }
+
+  .link--ilin:hover span:last-of-type {
+    color: $black;
+  }
+
+  .link--ilin span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $white;
+    line-height: 0.5;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  .link--ilin span:last-of-type::before {
+    background: $black;
+  }
+
+  .link--ilin:hover span:last-of-type::before,
+  .link--ilin span:first-of-type::before {
+    -webkit-transform: translate3d(0, -150%, 0);
+    transform: translate3d(0, -150%, 0);
+  }
+
+  .link--ilin:hover span:first-of-type::before,
+  .link--ilin span:last-of-type::before {
+    -webkit-transform: translate3d(0, 150%, 0);
+    transform: translate3d(0, 150%, 0);
   }
 }

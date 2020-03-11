@@ -16,25 +16,25 @@
       border-top: none;
 
       a {
-        color: $white;
+        color: $gray;
 
         &:hover {
-          color: $cyan;
+          color: $white;
           text-decoration: none;
           transition: color 0.5s ease-in-out;
         }
       }
 
       .btn-primary {
-        color: $white;
+        color: $gray;
         background-color: transparent;
-        border-color: $white;
+        border-color: $gray;
         border-width: thin;
 
         &:hover {
           background-color: transparent;
           color: $white;
-          border-color: $cyan;
+          border-color: $white;
           transition: border-color 0.5s ease;
         }
       }
@@ -45,7 +45,7 @@
       }
 
       button:hover {
-        color: $cyan;
+        color: $white;
         transition: color 0.5 ease;
       }
     }
