@@ -1,0 +1,11 @@
+section.portfolio {
+  .container-fluid {
+    // max-width: 50%;
+
+    overflow: hidden;
+
+    row {
+      display: flex;
+    }
+  }
+}
