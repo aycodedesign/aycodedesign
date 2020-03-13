@@ -182,6 +182,8 @@ body header #logo {
   }
 }
 nav {
+  max-width: 100%;
+  margin: 0 auto;
   /* Hover Dots */
   /* Ilin logo effect */
 }
@@ -313,11 +315,149 @@ nav .link--ilin span:last-of-type::before {
   transition: color 0.5 ease;
 }
 
+section.portfolio {
+  max-width: 100%;
+  margin: 0 auto;
+}
 section.portfolio .container-fluid {
+  max-width: 50%;
+  padding-left: 0px;
+  padding-right: 0px;
   overflow: hidden;
 }
 section.portfolio .container-fluid row {
   display: flex;
+}
+section.portfolio .container-fluid .grid {
+  position: relative;
+  clear: both;
+  list-style: none;
+  text-align: center;
+}
+section.portfolio .container-fluid .grid figure.effect-julia {
+  background: #303030;
+}
+section.portfolio .container-fluid .grid figure.effect-julia img {
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+section.portfolio .container-fluid .grid figure.effect-julia figcaption {
+  text-align: right;
+}
+section.portfolio .container-fluid .grid figure.effect-julia figcaption div {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+section.portfolio .container-fluid .grid figure.effect-julia figcaption h2 > a {
+  position: relative;
+  text-align: left;
+}
+section.portfolio .container-fluid .grid figure.effect-julia figcaption p {
+  display: inline-block;
+  margin: 0 0 0.25em 0;
+  padding: 0.4em 0.5em;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ebebeb;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 75%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-400px, 0, 0);
+  transform: translate3d(700px, 0, 0);
+}
+section.portfolio .container-fluid .grid figure.effect-julia figcaption p:first-child {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+section.portfolio .container-fluid .grid figure.effect-julia figcaption p:nth-of-type(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+section.portfolio .container-fluid .grid figure.effect-julia figcaption p:nth-of-type(3) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+section.portfolio .container-fluid .grid figure.effect-julia:hover p:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+section.portfolio .container-fluid .grid figure.effect-julia:hover p:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+section.portfolio .container-fluid .grid figure.effect-julia:hover p:nth-of-type(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+section.portfolio .container-fluid .grid figure.effect-julia:hover img {
+  opacity: 0.4;
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+  transform: scale3d(1.1, 1.1, 1);
+}
+section.portfolio .container-fluid .grid figure.effect-julia:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+section.portfolio .container-fluid .grid figure {
+  position: relative;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+section.portfolio .container-fluid .grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+section.portfolio .container-fluid .grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section.portfolio .container-fluid .grid figure figcaption::before, section.portfolio .container-fluid .grid figure figcaption::after {
+  pointer-events: none;
+}
+section.portfolio .container-fluid .grid figure figcaption h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 40%;
+}
+section.portfolio .container-fluid .grid figure figcaption h2 span {
+  font-weight: 600;
+}
+section.portfolio .container-fluid .grid figure figcaption p {
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+section.portfolio .container-fluid .grid figure figcaption p span {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
