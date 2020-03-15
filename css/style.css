@@ -346,7 +346,7 @@ section.portfolio .container-fluid .grid figure.effect-julia {
   cursor: pointer;
 }
 section.portfolio .container-fluid .grid figure.effect-julia img {
-  opacity: 0.3;
+  opacity: 0.15;
   max-width: 100%;
   height: auto;
   -webkit-transition: opacity 1s, -webkit-transform 1s;
@@ -379,7 +379,7 @@ section.portfolio .container-fluid .grid figure.effect-julia figcaption a {
   text-align: left;
   color: #ebebeb;
   text-decoration: none;
-  top: 40%;
+  top: 50%;
   left: 10%;
 }
 section.portfolio .container-fluid .grid figure.effect-julia figcaption a > h2 {
