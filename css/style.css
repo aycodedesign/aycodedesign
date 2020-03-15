@@ -375,14 +375,14 @@ section.portfolio .container-fluid .grid figure.effect-julia figcaption::before,
   pointer-events: none;
 }
 section.portfolio .container-fluid .grid figure.effect-julia figcaption a {
-  position: relative;
+  position: absolute;
   text-align: left;
   color: #ebebeb;
   text-decoration: none;
   top: 40%;
+  left: 10%;
 }
 section.portfolio .container-fluid .grid figure.effect-julia figcaption a > h2 {
-  position: absolute;
   word-spacing: -0.15em;
   font-weight: 300;
   letter-spacing: 3px;
