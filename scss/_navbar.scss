@@ -70,10 +70,12 @@ nav {
 
   .link--ilin:hover span:first-of-type {
     color: $white;
+    background: $black;
   }
 
   .link--ilin:hover span:last-of-type {
     color: $black;
+    background: $white;
   }
 
   .link--ilin span::before {

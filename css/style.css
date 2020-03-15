@@ -244,9 +244,11 @@ nav .link--ilin span {
 }
 nav .link--ilin:hover span:first-of-type {
   color: #ebebeb;
+  background: #000;
 }
 nav .link--ilin:hover span:last-of-type {
   color: #000;
+  background: #ebebeb;
 }
 nav .link--ilin span::before {
   content: "";
