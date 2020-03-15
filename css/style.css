@@ -430,7 +430,7 @@ section.portfolio .container-fluid .grid figure.effect-julia figcaption div {
 }
 section.portfolio .container-fluid .grid figure.effect-julia:hover h2 {
   transition: background-color 0.5s ease-in-out;
-  background: rgba(235, 235, 235, 0.5);
+  background: rgba(235, 235, 235, 0.9);
   color: #000;
 }
 section.portfolio .container-fluid .grid figure.effect-julia:hover p {
