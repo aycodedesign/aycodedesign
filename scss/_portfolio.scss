@@ -1,6 +1,5 @@
 section.portfolio {
   max-width: 100%;
-  // max-width: 1380px;
   margin: 0 auto;
 
   .container-fluid {
@@ -32,6 +31,7 @@ section.portfolio {
         cursor: pointer;
 
         img {
+          opacity: 0.3;
           max-width: 100%;
           height: auto;
           -webkit-transition: opacity 1s, -webkit-transform 1s;
@@ -45,7 +45,6 @@ section.portfolio {
         figcaption {
           text-align: right;
           padding: 2em;
-          color: $white;
           text-transform: uppercase;
           font-size: 1.5rem;
           -webkit-backface-visibility: hidden;
@@ -75,7 +74,6 @@ section.portfolio {
               word-spacing: -0.15em;
               font-weight: 300;
               letter-spacing: 3px;
-              background: rgba($black, 0.5);
               padding: 0.25rem;
             }
 
@@ -92,6 +90,7 @@ section.portfolio {
             font-weight: 600;
             padding: 0.4em 0.5em;
             color: $white;
+            background: rgba($black, 0.5);
             text-transform: none;
             -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
             transition: opacity 0.35s, transform 0.35s;
@@ -130,8 +129,8 @@ section.portfolio {
         &:hover {
           h2 {
             transition: background-color 0.5s ease-in-out;
-            background: rgba($white, 0.8);
-            color: $dark;
+            background: rgba($white, 0.5);
+            color: $black;
           }
 
           p {
@@ -157,7 +156,7 @@ section.portfolio {
 
           img {
             /* hover over portfolio image */
-            opacity: 0.4;
+            opacity: 1;
             -webkit-transform: scale3d(1.1, 1.1, 1);
             transform: scale3d(1.1, 1.1, 1);
           }

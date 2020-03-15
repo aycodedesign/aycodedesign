@@ -346,6 +346,7 @@ section.portfolio .container-fluid .grid figure.effect-julia {
   cursor: pointer;
 }
 section.portfolio .container-fluid .grid figure.effect-julia img {
+  opacity: 0.3;
   max-width: 100%;
   height: auto;
   -webkit-transition: opacity 1s, -webkit-transform 1s;
@@ -358,7 +359,6 @@ section.portfolio .container-fluid .grid figure.effect-julia img {
 section.portfolio .container-fluid .grid figure.effect-julia figcaption {
   text-align: right;
   padding: 2em;
-  color: #ebebeb;
   text-transform: uppercase;
   font-size: 1.5rem;
   -webkit-backface-visibility: hidden;
@@ -386,7 +386,6 @@ section.portfolio .container-fluid .grid figure.effect-julia figcaption a > h2 {
   word-spacing: -0.15em;
   font-weight: 300;
   letter-spacing: 3px;
-  background: rgba(0, 0, 0, 0.5);
   padding: 0.25rem;
 }
 section.portfolio .container-fluid .grid figure.effect-julia figcaption a span {
@@ -400,6 +399,7 @@ section.portfolio .container-fluid .grid figure.effect-julia figcaption p {
   font-weight: 600;
   padding: 0.4em 0.5em;
   color: #ebebeb;
+  background: rgba(0, 0, 0, 0.5);
   text-transform: none;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -430,8 +430,8 @@ section.portfolio .container-fluid .grid figure.effect-julia figcaption div {
 }
 section.portfolio .container-fluid .grid figure.effect-julia:hover h2 {
   transition: background-color 0.5s ease-in-out;
-  background: rgba(235, 235, 235, 0.8);
-  color: #303030;
+  background: rgba(235, 235, 235, 0.5);
+  color: #000;
 }
 section.portfolio .container-fluid .grid figure.effect-julia:hover p {
   opacity: 1;
@@ -448,7 +448,7 @@ section.portfolio .container-fluid .grid figure.effect-julia:hover p:nth-of-type
 }
 section.portfolio .container-fluid .grid figure.effect-julia:hover img {
   /* hover over portfolio image */
-  opacity: 0.4;
+  opacity: 1;
   -webkit-transform: scale3d(1.1, 1.1, 1);
   transform: scale3d(1.1, 1.1, 1);
 }
