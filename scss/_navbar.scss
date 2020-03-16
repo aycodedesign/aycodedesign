@@ -1,5 +1,4 @@
 nav {
-  // max-width: 1380px;
   max-width: 100%;
   margin: 0 auto;
 
@@ -21,23 +20,22 @@ nav {
 
   /* Hover Dots */
   .cl-effect-13 a {
-    -webkit-transition: color 0.3s;
-    -moz-transition: color 0.3s;
-    transition: color 0.3s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    transition: color 0.5s;
   }
 
   .cl-effect-13 a::before {
     position: absolute;
-    top: 100%;
+    top: 65%;
     left: 50%;
     color: transparent;
     content: "\25CF";
-    font-size: 200px;
     text-shadow: 0 0 transparent;
-    font-size: 1.2em;
-    -webkit-transition: text-shadow 0.3s, color 0.3s;
-    -moz-transition: text-shadow 0.3s, color 0.3s;
-    transition: text-shadow 0.3s, color 0.3s;
+    font-size: 1.5em;
+    -webkit-transition: text-shadow 0.3s, color 0.5s;
+    -moz-transition: text-shadow 0.5s, color 0.5s;
+    transition: text-shadow 0.5s, color 0.5s;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -103,5 +101,8 @@ nav {
   .link--ilin span:last-of-type::before {
     -webkit-transform: translate3d(0, 150%, 0);
     transform: translate3d(0, 150%, 0);
+  }
+
+  &.bottom-nav {
   }
 }

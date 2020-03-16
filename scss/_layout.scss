@@ -6,11 +6,7 @@ body {
 
   header {
     position: relative;
-    background-color: black;
-    // height: 75vh;
-    // height: 1280px;
     height: 100%;
-    // min-height: 25rem;
     width: 100%;
     overflow: hidden;
 
@@ -18,8 +14,6 @@ body {
       position: absolute;
       top: 50%;
       left: 50%;
-      // min-width: 100%;
-      // min-height: 100%;
       width: 100%;
       height: auto;
       z-index: 0;
@@ -27,33 +21,6 @@ body {
       -moz-transform: translateX(-50%) translateY(-50%);
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
-    }
-
-    /* The hero image */
-    .hero-image {
-      /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-      background-image: url("../img/bg-photon.png");
-
-      /* Set a specific height */
-      height: 100vh;
-      // height: 100%;
-
-      /* Position and center the image to scale nicely on all screens */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-
-      /* Place text in the middle of the image */
-      .hero-text {
-        // text-align: center;
-        // position: relative;
-        position: absolute;
-        top: 50%;
-        left: 20%;
-        // transform: translate(-50%, -50%);
-        color: white;
-      }
     }
 
     .container {
@@ -71,138 +38,86 @@ body {
       opacity: 0.5;
       z-index: 1;
     }
+  }
 
-    #logo {
-      max-width: 40%;
+  section {
+    &.heading {
+      padding: 15rem 3rem 3rem 10rem;
+      text-align: left;
+      text-decoration: none;
+      top: 50%;
+      left: 10%;
+
+      & > h2 {
+        position: absolute;
+        color: $black;
+        background: $white;
+        word-spacing: -0.15em;
+        letter-spacing: 3px;
+        padding: 0.25rem;
+        width: auto;
+      }
+
+      span {
+        font-weight: $thick-weight;
+      }
+
+      &#thebreakingacademy {
+        background-image: url(../img/tba/tba-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+      }
+
+      &#cleanup {
+        background-image: url(../img/cleanup/cleanup.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+      }
+    }
+  }
+
+  #logo {
+    max-width: 40%;
+    // position: relative;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    // transform: translateY(-50%, -50%);
+    z-index: 100;
+  }
+
+  /* The hero image */
+  .hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url("../img/bg-photon.png");
+
+    /* Set a specific height */
+    height: 100vh;
+    // height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    /* Place text in the middle of the image */
+    .hero-text {
+      // text-align: center;
       // position: relative;
       position: absolute;
-      top: 40%;
+      top: 50%;
       left: 20%;
-      // transform: translateY(-50%, -50%);
-      z-index: 100;
-    }
-  }
-}
-
-/* Hide the browser-specific focus styles */
-.floating-label-field {
-  border-width: 0;
-  color: rgba(#2c3e50, 0.75);
-  &:focus {
-    outline: 0;
-    box-shadow: 0;
-  }
-
-  &::placeholder {
-    color: transparent;
-  }
-}
-
-.floating-label-field {
-  &,
-  & + .floating-label {
-    line-height: 1;
-    font: inherit;
-    padding: 1.5em;
-    height: 4em;
-    width: 100%;
-    position: relative;
-  }
-}
-
-.floating-label-field {
-  & + .floating-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    user-select: none;
-    transition: transform 0.25s, opacity 0.25s ease-in-out;
-    transform-origin: 0 0;
-    opacity: 0.5;
-  }
-}
-
-.floating-label-field {
-  border-bottom: 3px solid rgba(white, 0.05);
-  background-color: transparent;
-  color: rgba(white, 0.75);
-}
-
-.floating-label-field {
-  &:focus,
-  &:not(:placeholder-shown) {
-    border-color: rgba(white, 0.1);
-    & + .floating-label {
-      transform: translate(1%, -30%) scale(0.8);
-      opacity: 0.25;
-    }
-  }
-}
-
-.floating-label-input {
-  &:valid {
-    &:not(:placeholder-shown) {
-      border-color: rgba(#2ed573, 0.3);
+      // transform: translate(-50%, -50%);
+      color: white;
     }
   }
 
-  &:invalid {
-    border-color: rgba(#ff4757, 0.3);
-  }
-}
-
-.modal-dialog-slideout {
-  min-height: 100%;
-  margin: 0 0 0 auto;
-  background: #fff;
-
-  .close {
-    color: $white;
-    font-size: 2.5rem;
-    text-shadow: transparent;
-    margin-top: -1.25rem;
-    margin-right: 0;
-  }
-
-  .form-control {
-    &#description {
-      height: calc(1.5em + 0.75rem + 100px);
+  section {
+    .intro {
+      outline: 1px white solid;
     }
   }
-}
-
-.modal.fade .modal-dialog.modal-dialog-slideout {
-  -webkit-transform: translate(100%, 0) scale(1);
-  transform: translate(100%, 0) scale(1);
-}
-.modal.fade.show .modal-dialog.modal-dialog-slideout {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  display: flex;
-  align-items: stretch;
-  -webkit-box-align: stretch;
-  height: 100%;
-}
-.modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body {
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-.modal-dialog-slideout .modal-content {
-  border: 0;
-}
-.modal-dialog-slideout .modal-header,
-.modal-dialog-slideout .modal-footer {
-  height: 69px;
-  display: block;
-}
-.modal-dialog-slideout .modal-header h5 {
-  float: left;
-}
-
-.floating-label-field#description {
-  height: 10em;
-  // width: 100%;
-  white-space: normal;
 }
 
 @media (pointer: coarse) and (hover: none) {

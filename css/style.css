@@ -5,14 +5,13 @@ body {
   font-weight: 300;
   color: #ebebeb;
   background-color: #303030;
+  /* The hero image */
 }
 body header {
   position: relative;
-  background-color: black;
   height: 100%;
   width: 100%;
   overflow: hidden;
-  /* The hero image */
 }
 body header video {
   position: absolute;
@@ -25,24 +24,6 @@ body header video {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-}
-body header .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("../img/bg-photon.png");
-  /* Set a specific height */
-  height: 100vh;
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  /* Place text in the middle of the image */
-}
-body header .hero-image .hero-text {
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  color: white;
 }
 body header .container {
   position: relative;
@@ -58,119 +39,62 @@ body header .overlay {
   opacity: 0.5;
   z-index: 1;
 }
-body header #logo {
+body section.heading {
+  padding: 15rem 3rem 3rem 10rem;
+  text-align: left;
+  text-decoration: none;
+  top: 50%;
+  left: 10%;
+}
+body section.heading > h2 {
+  position: absolute;
+  color: #000;
+  background: #ebebeb;
+  word-spacing: -0.15em;
+  letter-spacing: 3px;
+  padding: 0.25rem;
+  width: auto;
+}
+body section.heading span {
+  font-weight: 600;
+}
+body section.heading#thebreakingacademy {
+  background-image: url(../img/tba/tba-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+body section.heading#cleanup {
+  background-image: url(../img/cleanup/cleanup.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+body #logo {
   max-width: 40%;
   position: absolute;
   top: 40%;
   left: 20%;
   z-index: 100;
 }
-
-/* Hide the browser-specific focus styles */
-.floating-label-field {
-  border-width: 0;
-  color: rgba(44, 62, 80, 0.75);
-}
-.floating-label-field:focus {
-  outline: 0;
-  box-shadow: 0;
-}
-.floating-label-field::placeholder {
-  color: transparent;
-}
-
-.floating-label-field, .floating-label-field + .floating-label {
-  line-height: 1;
-  font: inherit;
-  padding: 1.5em;
-  height: 4em;
-  width: 100%;
+body .hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("../img/bg-photon.png");
+  /* Set a specific height */
+  height: 100vh;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
+  /* Place text in the middle of the image */
 }
-
-.floating-label-field + .floating-label {
+body .hero-image .hero-text {
   position: absolute;
-  top: 0;
-  left: 0;
-  user-select: none;
-  transition: transform 0.25s, opacity 0.25s ease-in-out;
-  transform-origin: 0 0;
-  opacity: 0.5;
+  top: 50%;
+  left: 20%;
+  color: white;
 }
-
-.floating-label-field {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.05);
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.floating-label-field:focus, .floating-label-field:not(:placeholder-shown) {
-  border-color: rgba(255, 255, 255, 0.1);
-}
-.floating-label-field:focus + .floating-label, .floating-label-field:not(:placeholder-shown) + .floating-label {
-  transform: translate(1%, -30%) scale(0.8);
-  opacity: 0.25;
-}
-
-.floating-label-input:valid:not(:placeholder-shown) {
-  border-color: rgba(46, 213, 115, 0.3);
-}
-.floating-label-input:invalid {
-  border-color: rgba(255, 71, 87, 0.3);
-}
-
-.modal-dialog-slideout {
-  min-height: 100%;
-  margin: 0 0 0 auto;
-  background: #fff;
-}
-.modal-dialog-slideout .close {
-  color: #ebebeb;
-  font-size: 2.5rem;
-  text-shadow: transparent;
-  margin-top: -1.25rem;
-  margin-right: 0;
-}
-.modal-dialog-slideout .form-control#description {
-  height: calc(1.5em + 0.75rem + 100px);
-}
-
-.modal.fade .modal-dialog.modal-dialog-slideout {
-  -webkit-transform: translate(100%, 0) scale(1);
-  transform: translate(100%, 0) scale(1);
-}
-
-.modal.fade.show .modal-dialog.modal-dialog-slideout {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  display: flex;
-  align-items: stretch;
-  -webkit-box-align: stretch;
-  height: 100%;
-}
-
-.modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body {
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.modal-dialog-slideout .modal-content {
-  border: 0;
-}
-
-.modal-dialog-slideout .modal-header,
-.modal-dialog-slideout .modal-footer {
-  height: 69px;
-  display: block;
-}
-
-.modal-dialog-slideout .modal-header h5 {
-  float: left;
-}
-
-.floating-label-field#description {
-  height: 10em;
-  white-space: normal;
+body section .intro {
+  outline: 1px white solid;
 }
 
 @media (pointer: coarse) and (hover: none) {
@@ -202,22 +126,21 @@ nav .navbar-nav > li > a {
   position: relative;
 }
 nav .cl-effect-13 a {
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  transition: color 0.3s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
 }
 nav .cl-effect-13 a::before {
   position: absolute;
-  top: 100%;
+  top: 65%;
   left: 50%;
   color: transparent;
   content: "●";
-  font-size: 200px;
   text-shadow: 0 0 transparent;
-  font-size: 1.2em;
-  -webkit-transition: text-shadow 0.3s, color 0.3s;
-  -moz-transition: text-shadow 0.3s, color 0.3s;
-  transition: text-shadow 0.3s, color 0.3s;
+  font-size: 1.5em;
+  -webkit-transition: text-shadow 0.3s, color 0.5s;
+  -moz-transition: text-shadow 0.5s, color 0.5s;
+  transition: text-shadow 0.5s, color 0.5s;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -273,50 +196,6 @@ nav .link--ilin span:last-of-type::before {
   -webkit-transform: translate3d(0, 150%, 0);
   transform: translate3d(0, 150%, 0);
 }
-
-.modal-dialog-slideout {
-  background: none;
-}
-.modal-dialog-slideout .modal-content {
-  color: #ebebeb;
-  background-color: #303030;
-  border-radius: 0.3rem;
-}
-.modal-dialog-slideout .modal-content .modal-header {
-  border-bottom: none;
-}
-.modal-dialog-slideout .modal-content .modal-body {
-  border-top: none;
-}
-.modal-dialog-slideout .modal-content .modal-body a {
-  color: #808080;
-}
-.modal-dialog-slideout .modal-content .modal-body a:hover {
-  color: #ebebeb;
-  text-decoration: none;
-  transition: color 0.5s ease-in-out;
-}
-.modal-dialog-slideout .modal-content .modal-body .btn-primary {
-  color: #808080;
-  background-color: transparent;
-  border-color: #808080;
-  border-width: thin;
-}
-.modal-dialog-slideout .modal-content .modal-body .btn-primary:hover {
-  background-color: transparent;
-  color: #ebebeb;
-  border-color: #ebebeb;
-  transition: border-color 0.5s ease;
-}
-.modal-dialog-slideout .modal-content .modal-body .btn-secondary {
-  background-color: transparent;
-  border-color: transparent;
-}
-.modal-dialog-slideout .modal-content .modal-body button:hover {
-  color: #ebebeb;
-  transition: color 0.5 ease;
-}
-
 section.portfolio {
   max-width: 100%;
   margin: 0 auto;
@@ -453,6 +332,147 @@ section.portfolio .container-fluid .grid figure.effect-julia:hover img {
   opacity: 1;
   -webkit-transform: scale3d(1.1, 1.1, 1);
   transform: scale3d(1.1, 1.1, 1);
+}
+
+.modal-dialog-slideout {
+  background: none;
+  min-height: 100%;
+  margin: 0 0 0 auto;
+  background: #fff;
+}
+.modal-dialog-slideout .close {
+  color: #ebebeb;
+  font-size: 2.5rem;
+  text-shadow: transparent;
+  margin-top: -1.25rem;
+  margin-right: 0;
+}
+.modal-dialog-slideout .form-control#description {
+  height: calc(1.5em + 0.75rem + 100px);
+}
+.modal-dialog-slideout .modal-content {
+  color: #ebebeb;
+  background-color: #303030;
+  border-radius: 0.3rem;
+}
+.modal-dialog-slideout .modal-content .modal-header {
+  border-bottom: none;
+}
+.modal-dialog-slideout .modal-content .modal-body {
+  border-top: none;
+}
+.modal-dialog-slideout .modal-content .modal-body a {
+  color: #808080;
+}
+.modal-dialog-slideout .modal-content .modal-body a:hover {
+  color: #ebebeb;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+.modal-dialog-slideout .modal-content .modal-body .btn-primary {
+  color: #808080;
+  background-color: transparent;
+  border-color: #808080;
+  border-width: thin;
+}
+.modal-dialog-slideout .modal-content .modal-body .btn-primary:hover {
+  background-color: transparent;
+  color: #ebebeb;
+  border-color: #ebebeb;
+  transition: border-color 0.5s ease;
+}
+.modal-dialog-slideout .modal-content .modal-body .btn-secondary {
+  background-color: transparent;
+  border-color: transparent;
+}
+.modal-dialog-slideout .modal-content .modal-body button:hover {
+  color: #ebebeb;
+  transition: color 0.5 ease;
+}
+
+/* Hide the browser-specific focus styles */
+.floating-label-field {
+  border-width: 0;
+  color: rgba(44, 62, 80, 0.75);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.05);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75);
+}
+.floating-label-field:focus {
+  outline: 0;
+  box-shadow: 0;
+}
+.floating-label-field:focus, .floating-label-field:not(:placeholder-shown) {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.floating-label-field:focus + .floating-label, .floating-label-field:not(:placeholder-shown) + .floating-label {
+  transform: translate(1%, -30%) scale(0.8);
+  opacity: 0.25;
+}
+.floating-label-field::placeholder {
+  color: transparent;
+}
+.floating-label-field, .floating-label-field + .floating-label {
+  line-height: 1;
+  font: inherit;
+  padding: 1.5em;
+  height: 4em;
+  width: 100%;
+  position: relative;
+}
+.floating-label-field + .floating-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  transition: transform 0.25s, opacity 0.25s ease-in-out;
+  transform-origin: 0 0;
+  opacity: 0.5;
+}
+
+.floating-label-input:valid:not(:placeholder-shown) {
+  border-color: rgba(46, 213, 115, 0.3);
+}
+.floating-label-input:invalid {
+  border-color: rgba(255, 71, 87, 0.3);
+}
+
+.modal.fade .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(100%, 0) scale(1);
+  transform: translate(100%, 0) scale(1);
+}
+
+.modal.fade.show .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  display: flex;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  height: 100%;
+}
+
+.modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal-dialog-slideout .modal-content {
+  border: 0;
+}
+
+.modal-dialog-slideout .modal-header,
+.modal-dialog-slideout .modal-footer {
+  height: 69px;
+  display: block;
+}
+
+.modal-dialog-slideout .modal-header h5 {
+  float: left;
+}
+
+.floating-label-field#description {
+  height: 10em;
+  white-space: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
