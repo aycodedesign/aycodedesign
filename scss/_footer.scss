@@ -1,0 +1,23 @@
+body {
+  footer {
+    background-color: $white !important;
+    height: 7rem;
+
+    a.nav-link {
+      color: $dark !important;
+    }
+
+    p {
+      color: $dark;
+    }
+
+    .bottom-nav {
+      /*  Black Hover Dots */
+
+      .cl-effect-13b a:hover::before,
+      .cl-effect-13b a:focus::before {
+        color: $dark;
+      }
+    }
+  }
+}

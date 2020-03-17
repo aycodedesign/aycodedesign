@@ -5,7 +5,6 @@ body {
   font-weight: 300;
   color: #ebebeb;
   background-color: #303030;
-  /* The hero image */
 }
 body header {
   position: relative;
@@ -35,65 +34,74 @@ body header .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
 body section.heading {
-  padding: 15rem 3rem 3rem 10rem;
   text-align: left;
   text-decoration: none;
   top: 50%;
   left: 10%;
 }
-body section.heading > h2 {
+body section#thebreakingacademy {
+  background-image: url(../img/tba/tba-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 1080px 3rem 3rem 10rem;
+}
+body section#cleanup {
+  background-image: url(../img/cleanup/cleanup.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+#logo {
+  max-width: 40%;
   position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 100;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+}
+.hero-image#home {
+  background-image: url("../img/bg-photon.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image#tba {
+  background-image: url("../img/tba/tba-hero.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image .hero-text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: 2;
+}
+.hero-image .hero-text h2 {
   color: #000;
-  background: #ebebeb;
+  background: rgba(235, 235, 235, 0.5);
   word-spacing: -0.15em;
   letter-spacing: 3px;
   padding: 0.25rem;
   width: auto;
 }
-body section.heading span {
+.hero-image .hero-text h2 span {
   font-weight: 600;
 }
-body section.heading#thebreakingacademy {
-  background-image: url(../img/tba/tba-hero.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-body section.heading#cleanup {
-  background-image: url(../img/cleanup/cleanup.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-body #logo {
-  max-width: 40%;
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  z-index: 100;
-}
-body .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("../img/bg-photon.png");
-  /* Set a specific height */
-  height: 100vh;
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  /* Place text in the middle of the image */
-}
-body .hero-image .hero-text {
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  color: white;
-}
-body section .intro {
+
+section .intro {
   outline: 1px white solid;
 }
 
@@ -164,14 +172,17 @@ nav .link--ilin span {
   display: inline-block;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
+  padding: 0 0.15rem;
 }
 nav .link--ilin:hover span:first-of-type {
   color: #ebebeb;
   background: #000;
+  padding: 0 0.15rem;
 }
 nav .link--ilin:hover span:last-of-type {
   color: #000;
   background: #ebebeb;
+  padding: 0 0.15rem;
 }
 nav .link--ilin span::before {
   content: "";
@@ -196,6 +207,34 @@ nav .link--ilin span:last-of-type::before {
   -webkit-transform: translate3d(0, 150%, 0);
   transform: translate3d(0, 150%, 0);
 }
+nav.bottom-nav {
+  /* Hover Dots */
+}
+nav.bottom-nav .cl-effect-13b a {
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+nav.bottom-nav .cl-effect-13b a::before {
+  position: absolute;
+  bottom: 65%;
+  left: 50%;
+  color: transparent;
+  content: "●";
+  font-size: 1.5em;
+  -webkit-transition: text-shadow 0.3s, color 0.5s;
+  -moz-transition: text-shadow 0.5s, color 0.5s;
+  transition: text-shadow 0.5s, color 0.5s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+nav.bottom-nav .cl-effect-13b a:hover::before,
+nav.bottom-nav .cl-effect-13b a:focus::before {
+  color: #ebebeb;
+}
+
 section.portfolio {
   max-width: 100%;
   margin: 0 auto;
@@ -473,6 +512,24 @@ section.portfolio .container-fluid .grid figure.effect-julia:hover img {
 .floating-label-field#description {
   height: 10em;
   white-space: normal;
+}
+
+body footer {
+  background-color: #ebebeb !important;
+  height: 7rem;
+}
+body footer a.nav-link {
+  color: #303030 !important;
+}
+body footer p {
+  color: #303030;
+}
+body footer .bottom-nav {
+  /*  Black Hover Dots */
+}
+body footer .bottom-nav .cl-effect-13b a:hover::before,
+body footer .bottom-nav .cl-effect-13b a:focus::before {
+  color: #303030;
 }
 
 /*# sourceMappingURL=style.css.map */

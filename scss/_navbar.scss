@@ -64,16 +64,19 @@ nav {
     display: inline-block;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
+    padding: 0 0.15rem;
   }
 
   .link--ilin:hover span:first-of-type {
     color: $white;
     background: $black;
+    padding: 0 0.15rem;
   }
 
   .link--ilin:hover span:last-of-type {
     color: $black;
     background: $white;
+    padding: 0 0.15rem;
   }
 
   .link--ilin span::before {
@@ -104,5 +107,32 @@ nav {
   }
 
   &.bottom-nav {
+    /* Hover Dots */
+    .cl-effect-13b a {
+      -webkit-transition: color 0.5s;
+      -moz-transition: color 0.5s;
+      transition: color 0.5s;
+    }
+
+    .cl-effect-13b a::before {
+      position: absolute;
+      bottom: 65%;
+      left: 50%;
+      color: transparent;
+      content: "\25CF";
+      font-size: 1.5em;
+      -webkit-transition: text-shadow 0.3s, color 0.5s;
+      -moz-transition: text-shadow 0.5s, color 0.5s;
+      transition: text-shadow 0.5s, color 0.5s;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+
+    .cl-effect-13b a:hover::before,
+    .cl-effect-13b a:focus::before {
+      color: $white;
+    }
   }
 }
