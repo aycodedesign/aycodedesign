@@ -4,6 +4,16 @@ body {
   color: $white;
   background-color: $dark;
 
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($black, 0.25);
+    z-index: 1;
+  }
+
   header {
     position: relative;
     height: 100%;
@@ -26,16 +36,6 @@ body {
     .container {
       position: relative;
       z-index: 2;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba($black, 0.25);
-      z-index: 1;
     }
   }
 

@@ -6,6 +6,15 @@ body {
   color: #ebebeb;
   background-color: #303030;
 }
+body .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
 body header {
   position: relative;
   height: 100%;
@@ -27,15 +36,6 @@ body header video {
 body header .container {
   position: relative;
   z-index: 2;
-}
-body header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
-  z-index: 1;
 }
 body section.heading {
   text-align: left;
@@ -373,6 +373,24 @@ section.portfolio .container-fluid .grid figure.effect-julia:hover img {
   transform: scale3d(1.1, 1.1, 1);
 }
 
+.btn-primary {
+  color: #808080;
+  background-color: transparent;
+  border-color: #808080;
+  border-width: thin;
+}
+.btn-primary:hover {
+  background-color: transparent;
+  color: #ebebeb;
+  border-color: #ebebeb;
+  transition: border-color 0.5s ease;
+}
+
+button:hover {
+  color: #ebebeb;
+  transition: color 0.5 ease;
+}
+
 .modal-dialog-slideout {
   background: none;
   min-height: 100%;
@@ -408,25 +426,9 @@ section.portfolio .container-fluid .grid figure.effect-julia:hover img {
   text-decoration: none;
   transition: color 0.5s ease-in-out;
 }
-.modal-dialog-slideout .modal-content .modal-body .btn-primary {
-  color: #808080;
-  background-color: transparent;
-  border-color: #808080;
-  border-width: thin;
-}
-.modal-dialog-slideout .modal-content .modal-body .btn-primary:hover {
-  background-color: transparent;
-  color: #ebebeb;
-  border-color: #ebebeb;
-  transition: border-color 0.5s ease;
-}
 .modal-dialog-slideout .modal-content .modal-body .btn-secondary {
   background-color: transparent;
   border-color: transparent;
-}
-.modal-dialog-slideout .modal-content .modal-body button:hover {
-  color: #ebebeb;
-  transition: color 0.5 ease;
 }
 
 /* Hide the browser-specific focus styles */
@@ -530,6 +532,87 @@ body footer .bottom-nav {
 body footer .bottom-nav .cl-effect-13b a:hover::before,
 body footer .bottom-nav .cl-effect-13b a:focus::before {
   color: #303030;
+}
+
+/* Header Parallax Element Style*/
+.paral {
+  height: 100vh;
+  min-height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Image for Parallax Section */
+.paralsec {
+  background-image: url("../img/tba/tba-hero.jpg");
+}
+.paralsec .hero-text {
+  display: inline-block;
+}
+.paralsec .hero-text h1 {
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  background: rgba(235, 235, 235, 0.5);
+  word-spacing: -0.15em;
+  letter-spacing: 3px;
+  padding: 0.25rem;
+  width: auto;
+}
+.paralsec .hero-text p {
+  text-align: right;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  letter-spacing: 2px;
+  font-size: 115%;
+  font-weight: 600;
+  padding: 0.5em;
+  margin: 1rem;
+  color: #ebebeb;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 15%;
+  right: 10%;
+}
+.paralsec .hero-text p span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.paralsec .hero-text span {
+  font-weight: 600;
+}
+
+.paralsec1 {
+  background: #303030;
+  width: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: 1px white solid;
+}
+
+.paralsec2 {
+  height: 300px;
+  background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
+}
+.paralsec2 .btn-primary {
+  color: #303030;
+  background-color: #ebebeb;
+  font-size: 150%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.paralsec2 .btn-primary:hover {
+  background-color: transparent;
+  color: #ebebeb;
+  border-color: #ebebeb;
+  transition: border-color 0.5s, color 0.25s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
