@@ -36,6 +36,8 @@ body {
     .container {
       position: relative;
       z-index: 2;
+      max-width: 90%;
+      // changed to override max-width:1140 from _grid, and fixes navbar on large screens
     }
   }
 
