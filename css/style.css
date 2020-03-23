@@ -299,7 +299,7 @@ section.portfolio .container-fluid .grid figure.effect-julia figcaption a {
   text-align: left;
   color: #ebebeb;
   text-decoration: none;
-  top: 50%;
+  top: 45%;
   left: 10%;
 }
 section.portfolio .container-fluid .grid figure.effect-julia figcaption a > h2 {
@@ -534,6 +534,17 @@ body footer .bottom-nav .cl-effect-13b a:focus::before {
   color: #303030;
 }
 
+h4 {
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+p {
+  line-height: 2rem;
+  margin: 3rem 0 7rem;
+}
+
 /* Header Parallax Element Style*/
 .paral {
   height: 100vh;
@@ -588,16 +599,26 @@ body footer .bottom-nav .cl-effect-13b a:focus::before {
 }
 
 .paralsec1 {
-  background: #303030;
-  width: 50%;
+  height: auto;
+  width: 75%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  outline: 1px white solid;
+}
+.paralsec1 .description {
+  width: 65%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.paralsec1 img {
+  width: 100%;
+  height: auto;
+  margin: 0 0 7rem;
 }
 
 .paralsec2 {
-  height: 300px;
+  height: auto;
   background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
 }
 .paralsec2 .btn-primary {
