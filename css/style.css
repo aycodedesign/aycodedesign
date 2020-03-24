@@ -58,7 +58,7 @@ body {
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */ }
   .hero-image#home {
-    background-image: url("../img/bg-photon.png");
+    background-image: url("../img/bg-skyline.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -199,143 +199,6 @@ nav {
 
 section.portfolio {
   max-width: 100%;
-<<<<<<< HEAD
-  margin: 0 auto;
-}
-section.portfolio .container-fluid {
-  max-width: 50%;
-  padding-left: 0px;
-  padding-right: 0px;
-  overflow: hidden;
-}
-section.portfolio .container-fluid row {
-  display: flex;
-}
-section.portfolio .container-fluid .grid {
-  position: relative;
-  clear: both;
-  list-style: none;
-  text-align: center;
-}
-section.portfolio .container-fluid .grid figure.effect-julia {
-  background: #000;
-  position: relative;
-  float: left;
-  margin: 0;
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  cursor: pointer;
-}
-section.portfolio .container-fluid .grid figure.effect-julia img {
-  opacity: 0.15;
-  max-width: 100%;
-  height: auto;
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, transform 1s;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: relative;
-  display: block;
-}
-section.portfolio .container-fluid .grid figure.effect-julia figcaption {
-  text-align: right;
-  padding: 2em;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: default;
-}
-section.portfolio .container-fluid .grid figure.effect-julia figcaption::before, section.portfolio .container-fluid .grid figure.effect-julia figcaption::after {
-  pointer-events: none;
-}
-section.portfolio .container-fluid .grid figure.effect-julia figcaption a {
-  position: absolute;
-  text-align: left;
-  color: #ebebeb;
-  text-decoration: none;
-  top: 45%;
-  left: 10%;
-}
-section.portfolio .container-fluid .grid figure.effect-julia figcaption a > h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-  letter-spacing: 3px;
-  padding: 0.25rem;
-}
-section.portfolio .container-fluid .grid figure.effect-julia figcaption a span {
-  font-weight: 600;
-}
-section.portfolio .container-fluid .grid figure.effect-julia figcaption p {
-  margin: 0 0 0.25em 0;
-  display: inline-block;
-  letter-spacing: 1px;
-  font-size: 68.5%;
-  font-weight: 600;
-  padding: 0.4em 0.5em;
-  color: #ebebeb;
-  background: rgba(0, 0, 0, 0.5);
-  text-transform: none;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-400px, 0, 0);
-  transform: translate3d(700px, 0, 0);
-}
-section.portfolio .container-fluid .grid figure.effect-julia figcaption p:first-child {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-}
-section.portfolio .container-fluid .grid figure.effect-julia figcaption p:nth-of-type(2) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-section.portfolio .container-fluid .grid figure.effect-julia figcaption p:nth-of-type(3) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-section.portfolio .container-fluid .grid figure.effect-julia figcaption p span {
-  font-size: 1rem;
-  font-weight: 600;
-}
-section.portfolio .container-fluid .grid figure.effect-julia figcaption div {
-  width: auto;
-  position: absolute;
-  bottom: 10%;
-  right: 5%;
-}
-section.portfolio .container-fluid .grid figure.effect-julia:hover h2 {
-  transition: background-color 0.5s ease-in-out;
-  background: rgba(235, 235, 235, 0.9);
-  color: #000;
-}
-section.portfolio .container-fluid .grid figure.effect-julia:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-section.portfolio .container-fluid .grid figure.effect-julia:hover p:first-child {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-section.portfolio .container-fluid .grid figure.effect-julia:hover p:nth-of-type(2) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.15s;
-}
-section.portfolio .container-fluid .grid figure.effect-julia:hover img {
-  /* hover over portfolio image */
-  opacity: 1;
-  -webkit-transform: scale3d(1.1, 1.1, 1);
-  transform: scale3d(1.1, 1.1, 1);
-}
-=======
   margin: 0 auto; }
   section.portfolio .container-fluid {
     max-width: 50%;
@@ -390,7 +253,7 @@ section.portfolio .container-fluid .grid figure.effect-julia:hover img {
             text-align: left;
             color: #ebebeb;
             text-decoration: none;
-            top: 50%;
+            top: 45%;
             left: 10%; }
             section.portfolio .container-fluid .grid figure.effect-julia figcaption a > h2 {
               word-spacing: -0.15em;
@@ -449,7 +312,6 @@ section.portfolio .container-fluid .grid figure.effect-julia:hover img {
           opacity: 1;
           -webkit-transform: scale3d(1.1, 1.1, 1);
           transform: scale3d(1.1, 1.1, 1); }
->>>>>>> 8c7aea43e82f5ee971a57e7ffe5765ffee3d870e
 
 .btn-primary {
   color: #808080;
@@ -582,13 +444,11 @@ body footer {
 h4 {
   letter-spacing: 2px;
   font-weight: 600;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem; }
 
 p {
   line-height: 2rem;
-  margin: 3rem 0 7rem;
-}
+  margin: 3rem 0 7rem; }
 
 /* Header Parallax Element Style*/
 .paral {
@@ -641,44 +501,19 @@ p {
   width: 75%;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
-<<<<<<< HEAD
-}
-.paralsec1 .description {
-  width: 65%;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.paralsec1 img {
-  width: 100%;
-  height: auto;
-  margin: 0 0 7rem;
-}
+  transform: translateX(-50%); }
+  .paralsec1 .description {
+    width: 65%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+  .paralsec1 img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 7rem; }
 
 .paralsec2 {
   height: auto;
-  background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
-}
-.paralsec2 .btn-primary {
-  color: #303030;
-  background-color: #ebebeb;
-  font-size: 150%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.paralsec2 .btn-primary:hover {
-  background-color: transparent;
-  color: #ebebeb;
-  border-color: #ebebeb;
-  transition: border-color 0.5s, color 0.25s ease-in-out;
-}
-=======
-  outline: 1px white solid; }
-
-.paralsec2 {
-  height: 300px;
   background-image: url("https://img.webnots.com/2015/11/parallax2.jpg"); }
   .paralsec2 .btn-primary {
     color: #303030;
@@ -692,6 +527,5 @@ p {
       color: #ebebeb;
       border-color: #ebebeb;
       transition: border-color 0.5s, color 0.25s ease-in-out; }
->>>>>>> 8c7aea43e82f5ee971a57e7ffe5765ffee3d870e
 
 /*# sourceMappingURL=style.css.map */
