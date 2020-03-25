@@ -6,9 +6,10 @@
 
   &:hover {
     background-color: transparent;
-    color: $white;
-    border-color: $white;
-    transition: border-color 0.5s ease;
+    color: $dark;
+    border-color: $dark;
+    border-width: 2px;
+    transition: border-color 0.5s ease, border-width 0.25s ease;
   }
 }
 
@@ -21,10 +22,9 @@ button:hover {
   background: none;
   min-height: 100%;
   margin: 0 0 0 auto;
-  background: #fff;
 
   .close {
-    color: $white;
+    color: $dark;
     font-size: 2.5rem;
     text-shadow: transparent;
     margin-top: -1.25rem;
@@ -38,12 +38,19 @@ button:hover {
   }
 
   .modal-content {
-    color: $white;
-    background-color: $dark;
+    color: $dark;
+    background-color: $white;
     border-radius: 0.3rem;
 
     .modal-header {
+      color: $gray;
       border-bottom: none;
+      display: inline;
+      padding: 1rem 0.5rem 1rem 2rem;
+
+      .modal-title {
+        font-weight: $thin-weight;
+      }
     }
 
     .modal-body {
@@ -53,7 +60,7 @@ button:hover {
         color: $gray;
 
         &:hover {
-          color: $white;
+          color: $dark;
           text-decoration: none;
           transition: color 0.5s ease-in-out;
         }
@@ -71,9 +78,9 @@ button:hover {
 .floating-label-field {
   border-width: 0;
   color: rgba(#2c3e50, 0.75);
-  border-bottom: 3px solid rgba(white, 0.05);
+  border-bottom: 3px solid rgba($dark, 0.05);
   background-color: transparent;
-  color: rgba(white, 0.75);
+  color: rgba($dark, 0.75);
 
   &:focus {
     outline: 0;
@@ -82,7 +89,7 @@ button:hover {
 
   &:focus,
   &:not(:placeholder-shown) {
-    border-color: rgba(white, 0.1);
+    border-color: rgba($dark, 0.1);
     & + .floating-label {
       transform: translate(1%, -30%) scale(0.8);
       opacity: 0.25;
@@ -150,7 +157,7 @@ button:hover {
   height: 69px;
   display: block;
 }
-.modal-dialog-slideout .modal-header h5 {
+.modal-dialog-slideout .modal-header h4 {
   float: left;
 }
 
