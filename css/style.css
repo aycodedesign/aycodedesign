@@ -546,16 +546,32 @@ button:hover {
 }
 
 body footer {
-  background-color: #ebebeb !important;
-  height: 7rem;
+  color: #303030;
+  background: #ebebeb;
+  height: 10rem;
 }
 body footer a.nav-link {
   color: #303030 !important;
 }
-body footer p {
+body footer .next-item {
+  color: #808080;
+  font-weight: 600;
+  font-size: 150%;
+  letter-spacing: 2px;
+}
+body footer .next-item a {
+  color: #808080;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+body footer .next-item a:hover {
   color: #303030;
+  transition: color 0.5s ease-in-out;
 }
 body footer .bottom-nav {
+  position: relative;
+  top: 25%;
   /*  Black Hover Dots */
 }
 body footer .bottom-nav .cl-effect-13b a:hover::before,

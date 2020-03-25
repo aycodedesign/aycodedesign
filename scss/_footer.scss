@@ -1,19 +1,37 @@
 body {
   footer {
-    background-color: $white !important;
-    height: 7rem;
+    color: $dark;
+    background: $white;
+    height: 10rem;
 
     a.nav-link {
       color: $dark !important;
     }
 
-    p {
-      color: $dark;
+    .next-item {
+      color: $gray;
+      font-weight: $thick-weight;
+      font-size: 150%;
+      letter-spacing: 2px;
+
+      a {
+        color: $gray;
+        font-weight: $thin-weight;
+        letter-spacing: 1px;
+        text-decoration: none;
+
+        &:hover {
+          color: $dark;
+          transition: color 0.5s ease-in-out;
+        }
+      }
     }
 
     .bottom-nav {
-      /*  Black Hover Dots */
+      position: relative;
+      top: 25%;
 
+      /*  Black Hover Dots */
       .cl-effect-13b a:hover::before,
       .cl-effect-13b a:focus::before {
         color: $dark;
