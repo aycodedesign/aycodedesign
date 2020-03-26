@@ -2,40 +2,59 @@ body {
   footer {
     color: $dark;
     background: $white;
-    height: 10rem;
+    height: 15em;
 
     a.nav-link {
       color: $dark !important;
     }
 
     .next-item {
+      position: absolute;
+      right: 0%;
       color: $gray;
-      font-weight: $thick-weight;
-      font-size: 150%;
+      font-weight: $thin-weight;
+      font-size: 125%;
       letter-spacing: 2px;
+      text-align: left;
+      background-image: none;
 
-      a {
+      .next-select {
         color: $gray;
         font-weight: $thin-weight;
         letter-spacing: 1px;
         text-decoration: none;
+        font-size: 150%;
+
+        a {
+          margin: 0 1rem;
+        }
+      }
+
+      .btn-circle.btn-md {
+        border-color: $black;
 
         &:hover {
-          color: $dark;
-          transition: color 0.5s ease-in-out;
+          border-color: $gray;
         }
       }
     }
 
     .bottom-nav {
       position: relative;
-      top: 25%;
+      bottom: 10%;
 
       /*  Black Hover Dots */
       .cl-effect-13b a:hover::before,
       .cl-effect-13b a:focus::before {
         color: $dark;
       }
+    }
+
+    #footer-logo {
+      margin: 0 auto;
+      width: 8%;
+      padding-top: 8%;
+      opacity: 0.25;
     }
   }
 }

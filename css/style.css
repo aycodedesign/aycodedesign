@@ -55,52 +55,102 @@ body section#cleanup {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+body a#visit-site {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  z-index: 10;
+}
+body a#visit-site button {
+  color: #ebebeb;
+  border-color: #ebebeb;
+  border-width: 1px;
+}
+body a#visit-site button:hover {
+  border-color: transparent;
+  color: #303030;
+  transition: color 0.5s ease, background-color 0.3s ease;
+}
+body a#visit-site button:hover.tba {
+  background-color: #52d9d2;
+}
+body a#visit-site button:hover.forpal {
+  background-color: #13aad8;
+}
 
 /* The hero image */
-.hero-image {
+.hero-image,
+.next-item {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: url("../img/bg-skyline.jpg");
   padding-top: 20%;
 }
-.hero-image .btn-circle.btn-md {
+.hero-image .btn-circle.btn-md,
+.next-item .btn-circle.btn-md {
   width: 50px;
   height: 50px;
   padding: 7px 10px;
   margin: 0 0.25rem !important;
   border-radius: 25px;
-  border-width: 0.5rem;
+  border-width: 5px;
 }
-.hero-image .btn-circle.btn-md:hover {
+.hero-image .btn-circle.btn-md:hover,
+.next-item .btn-circle.btn-md:hover {
   background-color: transparent;
   color: #ebebeb;
   border-color: #ebebeb;
-  border-width: 5px;
-  width: 55px;
-  height: 55px;
+  border-width: 10px;
+  width: 50px;
+  height: 50px;
   padding: 7px 10px;
   margin: 0 0.25rem !important;
   transition: border-color 0.5s ease, border-width 0.25s ease, width 0.25s ease, height 0.25s ease;
 }
-.hero-image#home {
+.hero-image .btn-circle.btn-sm,
+.next-item .btn-circle.btn-sm {
+  width: 35px;
+  height: 35px;
+  padding: 7px 10px;
+  margin: 0 0.25rem !important;
+  border-radius: 25px;
+  border-width: 3px;
+  border-color: #000;
+}
+.hero-image .btn-circle.btn-sm:hover,
+.next-item .btn-circle.btn-sm:hover {
+  border-color: #808080;
+  border-width: 7px;
+  width: 35px;
+  height: 35px;
+  padding: 7px 10px;
+  margin: 0 0.25rem !important;
+  transition: border-color 0.5s ease, border-width 0.25s ease, width 0.25s ease, height 0.25s ease;
+}
+.hero-image#home,
+.next-item#home {
   height: 100vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-image#home #logo {
+.hero-image#home #logo,
+.next-item#home #logo {
   z-index: 10;
 }
-.hero-image#home .hero-text {
+.hero-image#home .hero-text,
+.next-item#home .hero-text {
   position: relative;
   z-index: 3;
 }
-.hero-image#home h4 {
+.hero-image#home h4,
+.next-item#home h4 {
   font-weight: 300;
   text-align: left;
   margin-bottom: -2rem;
 }
-.hero-image#tba {
+.hero-image#tba,
+.next-item#tba {
   background-image: url("../img/tba/tba-hero.jpg");
   height: 100vh;
   background-position: center;
@@ -108,11 +158,13 @@ body section#cleanup {
   background-size: cover;
   position: relative;
 }
-.hero-image .hero-text {
+.hero-image .hero-text,
+.next-item .hero-text {
   position: relative;
   z-index: 2;
 }
-.hero-image .hero-text h2 {
+.hero-image .hero-text h2,
+.next-item .hero-text h2 {
   color: #000;
   background: rgba(235, 235, 235, 0.5);
   word-spacing: -0.15em;
@@ -120,7 +172,8 @@ body section#cleanup {
   padding: 0.25rem;
   width: auto;
 }
-.hero-image .hero-text h2 span {
+.hero-image .hero-text h2 span,
+.next-item .hero-text h2 span {
   font-weight: 600;
 }
 
@@ -548,35 +601,51 @@ button:hover {
 body footer {
   color: #303030;
   background: #ebebeb;
-  height: 10rem;
+  height: 15em;
 }
 body footer a.nav-link {
   color: #303030 !important;
 }
 body footer .next-item {
+  position: absolute;
+  right: 0%;
   color: #808080;
-  font-weight: 600;
-  font-size: 150%;
+  font-weight: 300;
+  font-size: 125%;
   letter-spacing: 2px;
+  text-align: left;
+  background-image: none;
 }
-body footer .next-item a {
+body footer .next-item .next-select {
   color: #808080;
   font-weight: 300;
   letter-spacing: 1px;
   text-decoration: none;
+  font-size: 150%;
 }
-body footer .next-item a:hover {
-  color: #303030;
-  transition: color 0.5s ease-in-out;
+body footer .next-item .next-select a {
+  margin: 0 1rem;
+}
+body footer .next-item .btn-circle.btn-md {
+  border-color: #000;
+}
+body footer .next-item .btn-circle.btn-md:hover {
+  border-color: #808080;
 }
 body footer .bottom-nav {
   position: relative;
-  top: 25%;
+  bottom: 10%;
   /*  Black Hover Dots */
 }
 body footer .bottom-nav .cl-effect-13b a:hover::before,
 body footer .bottom-nav .cl-effect-13b a:focus::before {
   color: #303030;
+}
+body footer #footer-logo {
+  margin: 0 auto;
+  width: 8%;
+  padding-top: 8%;
+  opacity: 0.25;
 }
 
 h4 {
@@ -600,8 +669,14 @@ p {
 }
 
 /* Image for Parallax Section */
-.paralsec {
+.paralsec#tba {
   background-image: url("../img/tba/tba-hero.jpg");
+}
+.paralsec#forpal {
+  background-image: url("../img/forpal/aubrey_young_forpal_1.jpg");
+}
+.paralsec#cleanup {
+  background-image: url("../img/cleanup/cleanup.jpg");
 }
 .paralsec .hero-text {
   display: inline-block;
@@ -643,30 +718,41 @@ p {
   font-weight: 600;
 }
 
-.paralsec1 {
+.paralsec1,
+.paralsec2 {
   height: auto;
   width: 75%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
-.paralsec1 .description {
+.paralsec1 .description,
+.paralsec2 .description {
   width: 65%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
-.paralsec1 img {
+.paralsec1 img,
+.paralsec2 img {
   width: 100%;
   height: auto;
   margin: 0 0 7rem;
 }
+.paralsec1 img#color-type,
+.paralsec2 img#color-type {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-.paralsec2 {
+.paralsec3 {
   height: auto;
   background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
 }
-.paralsec2 .btn-primary {
+.paralsec3 .btn-primary {
   color: #303030;
   background-color: #ebebeb;
   font-size: 150%;
@@ -674,7 +760,7 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
-.paralsec2 .btn-primary:hover {
+.paralsec3 .btn-primary:hover {
   background-color: transparent;
   color: #ebebeb;
   border-color: #ebebeb;

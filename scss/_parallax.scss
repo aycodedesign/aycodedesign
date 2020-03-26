@@ -20,7 +20,17 @@ p {
 
 /* Image for Parallax Section */
 .paralsec {
-  background-image: url("../img/tba/tba-hero.jpg");
+  &#tba {
+    background-image: url("../img/tba/tba-hero.jpg");
+  }
+
+  &#forpal {
+    background-image: url("../img/forpal/aubrey_young_forpal_1.jpg");
+  }
+
+  &#cleanup {
+    background-image: url("../img/cleanup/cleanup.jpg");
+  }
 
   .hero-text {
     display: inline-block;
@@ -66,7 +76,8 @@ p {
   }
 }
 
-.paralsec1 {
+.paralsec1,
+.paralsec2 {
   height: auto;
   width: 75%;
   position: relative;
@@ -84,11 +95,18 @@ p {
     width: 100%;
     height: auto;
     margin: 0 0 7rem;
+
+    &#color-type {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
-.paralsec2 {
-  // height: 300px;
+.paralsec3 {
   height: auto;
   background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
 

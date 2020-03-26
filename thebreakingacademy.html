@@ -56,6 +56,18 @@
 
   <body>
     <header>
+      <!-- ========== VISIT SITE ========== -->
+
+      <a id="visit-site" href="https://thebreakingacademy.com" target="_blank">
+        <button
+          type="button"
+          class="btn btn-primary mt-5 tba"
+          data-dismiss="modal"
+        >
+          visit<br />site
+        </button>
+      </a>
+
       <!-- ========== MODAL ========== -->
 
       <div
@@ -195,8 +207,9 @@
     </header>
 
     <div class="overlay"></div>
+
     <!-- First Parallax Section -->
-    <div class=" paral paralsec">
+    <div id="tba" class="paral paralsec">
       <div class="hero-text pt-5">
         <h1>
           THE<span>BREAKING</span>ACADEMY
@@ -209,12 +222,8 @@
       <div class="description">
         <h4>OBJECTIVE</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar
-          mattis nunc sed blandit libero volutpat. Consectetur lorem donec massa
-          sapien faucibus et molestie. Etiam erat velit scelerisque in dictum
-          non consectetur a erat. Et tortor at risus viverra adipiscing at in
-          tellus integer. Ut eu sem integer vitae.
+          Highlights include responsive design on all devices, smooth scrolling,
+          and photo manipulation.
         </p>
       </div>
 
@@ -222,7 +231,13 @@
         src="./img/tba/tba1.jpg"
         alt="The Breaking Academy digital display"
       />
+    </div>
 
+    <!-- Clear Parallax Section -->
+    <div class="paral paralsec3 py-5"></div>
+
+    <!-- Third Parallax Section -->
+    <div class="paral paralsec2 py-5">
       <div class="description">
         <h4>COLOR & TYPE</h4>
         <p>
@@ -233,18 +248,10 @@
       </div>
 
       <img
+        id="color-type"
         src="./img/tba/tba_color-type.png"
         alt="The Breaking Academy color & type"
       />
-    </div>
-
-    <!-- Third Parallax Section -->
-    <div class="paral paralsec2">
-      <a href="https://thebreakingacademy.com" target="_blank">
-        <button type="button" class="btn btn-primary mt-5" data-dismiss="modal">
-          visit the site
-        </button>
-      </a>
     </div>
 
     <!-- Add More Parallax Sections Here -->
@@ -289,8 +296,23 @@
           </ul>
         </div>
       </nav>
-      <div class="next-item float-right px-5">
-        next project: <a href="./cleanup.html">CLEANUP</a>
+
+      <div class="next-item px-5 py-3 float-left">
+        <div>next project::</div>
+        <div class="next-select">
+          CLEANUP
+          <a href="./cleanup.html">
+            <button
+              type="button"
+              class="btn btn-primary btn-circle btn-sm mx-5 float-right"
+              data-dismiss="modal"
+            ></button>
+          </a>
+        </div>
+      </div>
+
+      <div id="footer-logo">
+        <img src="./img/logo-gray.svg" alt="gray AYcodedesign logo" />
       </div>
     </footer>
 
