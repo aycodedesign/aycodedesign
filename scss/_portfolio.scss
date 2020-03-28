@@ -94,8 +94,8 @@ section.portfolio {
             text-transform: none;
             -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
             transition: opacity 0.35s, transform 0.35s;
-            -webkit-transform: translate3d(-400px, 0, 0);
-            transform: translate3d(700px, 0, 0);
+            -webkit-transform: translate3d(1000px, 0, 0);
+            transform: translate3d(1000px, 0, 0);
 
             &:first-child {
               -webkit-transition-delay: 0.15s;
