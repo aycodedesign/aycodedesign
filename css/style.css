@@ -44,17 +44,6 @@ body section.heading {
   top: 50%;
   left: 10%;
 }
-body section#thebreakingacademy {
-  background-image: url(../img/tba/tba-hero.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  padding: 1080px 3rem 3rem 10rem;
-}
-body section#cleanup {
-  background-image: url(../img/cleanup/cleanup.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
 body a#visit-site {
   position: fixed;
   right: 0;
@@ -79,14 +68,12 @@ body a#visit-site button:hover.forpal {
 }
 
 /* The hero image */
-.hero-image,
-.next-item {
+.hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: url("../img/bg-skyline.jpg");
   padding-top: 20%;
 }
-.hero-image .btn-circle.btn-md,
-.next-item .btn-circle.btn-md {
+.hero-image .btn-circle.btn-md {
   width: 50px;
   height: 50px;
   padding: 7px 10px;
@@ -94,8 +81,7 @@ body a#visit-site button:hover.forpal {
   border-radius: 25px;
   border-width: 5px;
 }
-.hero-image .btn-circle.btn-md:hover,
-.next-item .btn-circle.btn-md:hover {
+.hero-image .btn-circle.btn-md:hover {
   background-color: transparent;
   color: #ebebeb;
   border-color: #ebebeb;
@@ -106,8 +92,7 @@ body a#visit-site button:hover.forpal {
   margin: 0 0.25rem !important;
   transition: border-color 0.5s ease, border-width 0.25s ease, width 0.25s ease, height 0.25s ease;
 }
-.hero-image .btn-circle.btn-sm,
-.next-item .btn-circle.btn-sm {
+.hero-image .btn-circle.btn-sm {
   width: 35px;
   height: 35px;
   padding: 7px 10px;
@@ -116,8 +101,7 @@ body a#visit-site button:hover.forpal {
   border-width: 3px;
   border-color: #000;
 }
-.hero-image .btn-circle.btn-sm:hover,
-.next-item .btn-circle.btn-sm:hover {
+.hero-image .btn-circle.btn-sm:hover {
   border-color: #808080;
   border-width: 7px;
   width: 35px;
@@ -126,31 +110,26 @@ body a#visit-site button:hover.forpal {
   margin: 0 0.25rem !important;
   transition: border-color 0.5s ease, border-width 0.25s ease, width 0.25s ease, height 0.25s ease;
 }
-.hero-image#home,
-.next-item#home {
+.hero-image#home {
   height: 100vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-image#home #logo,
-.next-item#home #logo {
+.hero-image#home #logo {
   z-index: 10;
 }
-.hero-image#home .hero-text,
-.next-item#home .hero-text {
+.hero-image#home .hero-text {
   position: relative;
   z-index: 3;
 }
-.hero-image#home h4,
-.next-item#home h4 {
+.hero-image#home h4 {
   font-weight: 300;
   text-align: left;
   margin-bottom: -2rem;
 }
-.hero-image#tba,
-.next-item#tba {
+.hero-image#tba {
   background-image: url("../img/tba/tba-hero.jpg");
   height: 100vh;
   background-position: center;
@@ -158,13 +137,11 @@ body a#visit-site button:hover.forpal {
   background-size: cover;
   position: relative;
 }
-.hero-image .hero-text,
-.next-item .hero-text {
+.hero-image .hero-text {
   position: relative;
   z-index: 2;
 }
-.hero-image .hero-text h2,
-.next-item .hero-text h2 {
+.hero-image .hero-text h2 {
   color: #000;
   background: rgba(235, 235, 235, 0.5);
   word-spacing: -0.15em;
@@ -172,8 +149,7 @@ body a#visit-site button:hover.forpal {
   padding: 0.25rem;
   width: auto;
 }
-.hero-image .hero-text h2 span,
-.next-item .hero-text h2 span {
+.hero-image .hero-text h2 span {
   font-weight: 600;
 }
 
@@ -606,9 +582,7 @@ body footer {
 body footer a.nav-link {
   color: #303030 !important;
 }
-body footer .next-item {
-  position: absolute;
-  right: 0%;
+body footer .prev-item {
   color: #808080;
   font-weight: 300;
   font-size: 125%;
@@ -616,25 +590,29 @@ body footer .next-item {
   text-align: left;
   background-image: none;
 }
-body footer .next-item .next-select {
-  color: #808080;
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-decoration: none;
-  font-size: 150%;
-}
-body footer .next-item .next-select a {
-  margin: 0 1rem;
-}
-body footer .next-item .btn-circle.btn-md {
+body footer .btn-circle.btn-sm {
   border-color: #000;
 }
-body footer .next-item .btn-circle.btn-md:hover {
+body footer .btn-circle.btn-sm:hover {
+  border-color: #808080;
+}
+body footer .next-item {
+  color: #808080;
+  font-weight: 300;
+  font-size: 125%;
+  letter-spacing: 2px;
+  text-align: right;
+  background-image: none;
+}
+body footer .next-item .btn-circle.btn-sm {
+  border-color: #000;
+}
+body footer .next-item .btn-circle.btn-sm:hover {
   border-color: #808080;
 }
 body footer .bottom-nav {
   position: relative;
-  bottom: 10%;
+  top: 60%;
   /*  Black Hover Dots */
 }
 body footer .bottom-nav .cl-effect-13b a:hover::before,
@@ -677,6 +655,9 @@ p {
 }
 .paralsec#cleanup {
   background-image: url("../img/cleanup/cleanup.jpg");
+}
+.paralsec#evora {
+  background-image: url("../img/evora/evora-hero.jpg");
 }
 .paralsec .hero-text {
   display: inline-block;

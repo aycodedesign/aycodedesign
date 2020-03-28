@@ -8,29 +8,55 @@ body {
       color: $dark !important;
     }
 
-    .next-item {
-      position: absolute;
-      right: 0%;
+    // .prev-select {
+    //   color: $gray;
+    //   font-weight: $thin-weight;
+    //   letter-spacing: 1px;
+    //   text-decoration: none;
+    //   font-size: 150%;
+
+    //   a {
+    //     margin: 0 1rem;
+    //   }
+    // }
+
+    .prev-item {
       color: $gray;
       font-weight: $thin-weight;
       font-size: 125%;
       letter-spacing: 2px;
       text-align: left;
       background-image: none;
+    }
+    .btn-circle.btn-sm {
+      border-color: $black;
 
-      .next-select {
-        color: $gray;
-        font-weight: $thin-weight;
-        letter-spacing: 1px;
-        text-decoration: none;
-        font-size: 150%;
-
-        a {
-          margin: 0 1rem;
-        }
+      &:hover {
+        border-color: $gray;
       }
+    }
 
-      .btn-circle.btn-md {
+    // .next-select {
+    //   color: $gray;
+    //   font-weight: $thin-weight;
+    //   letter-spacing: 1px;
+    //   text-decoration: none;
+    //   font-size: 150%;
+
+    //   a {
+    //     margin: 0 1rem;
+    //   }
+    // }
+
+    .next-item {
+      color: $gray;
+      font-weight: $thin-weight;
+      font-size: 125%;
+      letter-spacing: 2px;
+      text-align: right;
+      background-image: none;
+
+      .btn-circle.btn-sm {
         border-color: $black;
 
         &:hover {
@@ -41,7 +67,7 @@ body {
 
     .bottom-nav {
       position: relative;
-      bottom: 10%;
+      top: 60%;
 
       /*  Black Hover Dots */
       .cl-effect-13b a:hover::before,

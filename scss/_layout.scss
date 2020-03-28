@@ -48,19 +48,6 @@ body {
       top: 50%;
       left: 10%;
     }
-
-    &#thebreakingacademy {
-      background-image: url(../img/tba/tba-hero.jpg);
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-      padding: 1080px 3rem 3rem 10rem;
-    }
-
-    &#cleanup {
-      background-image: url(../img/cleanup/cleanup.jpg);
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-    }
   }
 
   a#visit-site {
@@ -92,8 +79,7 @@ body {
 }
 
 /* The hero image */
-.hero-image,
-.next-item {
+.hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: url("../img/bg-skyline.jpg");
   padding-top: 20%;
