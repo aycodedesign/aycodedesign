@@ -2,56 +2,49 @@ body {
   footer {
     color: $dark;
     background: $white;
-    height: 15em;
+    height: 20em;
 
-    a.nav-link {
-      color: $dark !important;
+    a {
+      .nav-link {
+        color: $dark;
+      }
+
+      .btn-circle.btn-sm {
+        width: 35px;
+        height: 35px;
+        padding: 7px 10px;
+        margin: 1rem 0.25rem !important;
+        border-radius: 25px;
+        border-width: 8px;
+        border-color: $black;
+        background-color: $black;
+
+        &:hover {
+          border-width: 5px;
+          width: 35px;
+          height: 35px;
+          padding: 7px 10px;
+          margin: 1rem 0.25rem !important;
+          background-color: transparent;
+          transition: border-color 0.5s ease, border-width 0.25s ease,
+            width 0.25s ease, height 0.25s ease, background-color 0.25s ease;
+        }
+      }
     }
-
-    // .prev-select {
-    //   color: $gray;
-    //   font-weight: $thin-weight;
-    //   letter-spacing: 1px;
-    //   text-decoration: none;
-    //   font-size: 150%;
-
-    //   a {
-    //     margin: 0 1rem;
-    //   }
-    // }
 
     .prev-item {
       color: $gray;
       font-weight: $thin-weight;
-      font-size: 125%;
+      font-size: 150%;
       letter-spacing: 2px;
       text-align: left;
       background-image: none;
     }
-    .btn-circle.btn-sm {
-      border-color: $black;
-
-      &:hover {
-        border-color: $gray;
-      }
-    }
-
-    // .next-select {
-    //   color: $gray;
-    //   font-weight: $thin-weight;
-    //   letter-spacing: 1px;
-    //   text-decoration: none;
-    //   font-size: 150%;
-
-    //   a {
-    //     margin: 0 1rem;
-    //   }
-    // }
 
     .next-item {
       color: $gray;
       font-weight: $thin-weight;
-      font-size: 125%;
+      font-size: 150%;
       letter-spacing: 2px;
       text-align: right;
       background-image: none;
@@ -65,11 +58,51 @@ body {
       }
     }
 
-    .bottom-nav {
-      position: relative;
-      top: 60%;
+    .nav-link {
+      color: $dark !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
 
-      /*  Black Hover Dots */
+    .navbar-nav > li > a {
+      text-decoration: none;
+      color: $dark;
+
+      .nav-item {
+        color: $dark;
+      }
+    }
+
+    .bottom-nav {
+      &.fixed-bottom {
+        position: relative;
+        top: 25%;
+        padding: 0;
+      }
+
+      /* Hover Dots */
+      .cl-effect-13b a {
+        -webkit-transition: color 0.5s;
+        -moz-transition: color 0.5s;
+        transition: color 0.5s;
+      }
+
+      .cl-effect-13b a::before {
+        position: absolute;
+        bottom: 65%;
+        left: 50%;
+        color: transparent;
+        content: "\25CF";
+        font-size: 1.5em;
+        -webkit-transition: text-shadow 0.3s, color 0.5s;
+        -moz-transition: text-shadow 0.5s, color 0.5s;
+        transition: text-shadow 0.5s, color 0.5s;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        transform: translateX(-50%);
+        pointer-events: none;
+      }
+
       .cl-effect-13b a:hover::before,
       .cl-effect-13b a:focus::before {
         color: $dark;
@@ -79,7 +112,7 @@ body {
     #footer-logo {
       margin: 0 auto;
       width: 8%;
-      padding-top: 8%;
+      padding-top: 3%;
       opacity: 0.25;
     }
   }
