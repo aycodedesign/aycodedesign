@@ -753,7 +753,7 @@ p {
 .paralsec1 img#color-type,
 .paralsec2 img#color-type {
   position: relative;
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
   left: 50%;
   transform: translateX(-50%);
@@ -778,29 +778,37 @@ p {
   transition: border-color 0.5s, color 0.25s ease-in-out;
 }
 
-#slider {
-  padding: 1.5rem;
-  margin-right: 0;
-  margin-left: 0;
-  border-width: 0.2rem;
+/*
+Removes white gap between slides - change to base color of slide images
+*/
+.carousel {
+  background: #007aeb;
 }
 
-.box-center {
-  margin: 0 auto;
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+  width: 100%;
 }
 
-.carousel-caption {
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 30px;
-  opacity: 0;
-  transition: all 800ms linear;
-  background: rgba(0, 0, 0, 0.45);
+/* 
+anchors are inline so you need ot make them block to go full width
+*/
+.carousel-item a {
+  display: block;
+  width: 100%;
 }
 
-.carousel-item.active .carousel-caption {
-  opacity: 1;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+  width: 50px;
+  height: 50px;
+}
+
+ol {
+  filter: invert(0.5);
 }
 
 /*# sourceMappingURL=style.css.map */
