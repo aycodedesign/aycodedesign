@@ -674,6 +674,7 @@ p {
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
+  margin-bottom: 5rem;
 }
 
 /* Image for Parallax Section */
@@ -681,7 +682,7 @@ p {
   background-image: url("../img/tba/tba-hero.jpg");
 }
 .paralsec#forpal {
-  background-image: url("../img/forpal/aubrey_young_forpal_1.jpg");
+  background-image: url("../img/forpal/forpal_hero.jpg");
 }
 .paralsec#cleanup {
   background-image: url("../img/cleanup/cleanup.jpg");
@@ -761,21 +762,13 @@ p {
 
 .paralsec3 {
   height: auto;
-  background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
+  background-image: url("../img/bg-wall.jpg");
 }
-.paralsec3 .btn-primary {
-  color: #303030;
-  background-color: #ebebeb;
-  font-size: 150%;
-  position: absolute;
+.paralsec3.paral img {
+  width: 75%;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
-}
-.paralsec3 .btn-primary:hover {
-  background-color: transparent;
-  color: #ebebeb;
-  border-color: #ebebeb;
-  transition: border-color 0.5s, color 0.25s ease-in-out;
 }
 
 /*
