@@ -113,15 +113,15 @@ p {
 
 .paralsec3 {
   height: auto;
-  // background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
-  background-image: url("../img/bg-wall.jpg");
 
   &.paral {
-    img {
-      width: 75%;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+    background-image: url("../img/bg-dots.jpg");
+    background-color: rgba($black, 0.7);
+  }
+  img {
+    width: 75%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

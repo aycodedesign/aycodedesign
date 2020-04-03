@@ -1,12 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Kanit:300,600&display=swap");
-body {
+html {
+  scroll-behavior: smooth;
+  /* The hero image */
+}
+html body {
   font-family: Kanit, sans-serif;
   font-weight: 300;
   color: #ebebeb;
   background-color: #303030;
 }
-body .overlay {
+html body .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -15,13 +19,13 @@ body .overlay {
   background-color: rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
-body header {
+html body header {
   position: relative;
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
-body header video {
+html body header video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -33,47 +37,45 @@ body header video {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-body header .container {
+html body header .container {
   position: relative;
   z-index: 2;
   max-width: 90%;
 }
-body section.heading {
+html body section.heading {
   text-align: left;
   text-decoration: none;
   top: 50%;
   left: 10%;
 }
-body a#visit-site {
+html body a#visit-site {
   position: fixed;
   right: 0;
   top: 35%;
   z-index: 10;
 }
-body a#visit-site button {
+html body a#visit-site button {
   color: #ebebeb;
   border-color: #ebebeb;
   border-width: 1px;
 }
-body a#visit-site button:hover {
+html body a#visit-site button:hover {
   border-color: transparent;
   color: #303030;
   transition: color 0.5s ease, background-color 0.3s ease;
 }
-body a#visit-site button:hover.tba {
+html body a#visit-site button:hover.tba {
   background-color: #52d9d2;
 }
-body a#visit-site button:hover.forpal {
+html body a#visit-site button:hover.forpal {
   background-color: #13aad8;
 }
-
-/* The hero image */
-.hero-image {
+html .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("../img/bg-skyline.jpg");
+  background-image: url("../img/bg-space.jpg");
   padding-top: 20%;
 }
-.hero-image .btn-circle.btn-md {
+html .hero-image .btn-circle.btn-md {
   width: 50px;
   height: 50px;
   padding: 7px 10px;
@@ -81,7 +83,7 @@ body a#visit-site button:hover.forpal {
   border-radius: 25px;
   border-width: 5px;
 }
-.hero-image .btn-circle.btn-md:hover {
+html .hero-image .btn-circle.btn-md:hover {
   background-color: transparent;
   color: #ebebeb;
   border-color: #ebebeb;
@@ -92,26 +94,26 @@ body a#visit-site button:hover.forpal {
   margin: 0 0.25rem !important;
   transition: border-color 0.5s ease, border-width 0.25s ease, width 0.25s ease, height 0.25s ease;
 }
-.hero-image#home {
+html .hero-image#home {
   height: 100vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-image#home #logo {
-  z-index: 10;
+html .hero-image#home #logo {
+  z-index: 100;
 }
-.hero-image#home .hero-text {
+html .hero-image#home .hero-text {
   position: relative;
   z-index: 3;
 }
-.hero-image#home h4 {
+html .hero-image#home h4 {
   font-weight: 300;
   text-align: left;
   margin-bottom: -2rem;
 }
-.hero-image#tba {
+html .hero-image#tba {
   background-image: url("../img/tba/tba-hero.jpg");
   height: 100vh;
   background-position: center;
@@ -119,11 +121,11 @@ body a#visit-site button:hover.forpal {
   background-size: cover;
   position: relative;
 }
-.hero-image .hero-text {
+html .hero-image .hero-text {
   position: relative;
   z-index: 2;
 }
-.hero-image .hero-text h2 {
+html .hero-image .hero-text h2 {
   color: #000;
   background: rgba(235, 235, 235, 0.5);
   word-spacing: -0.15em;
@@ -131,22 +133,21 @@ body a#visit-site button:hover.forpal {
   padding: 0.25rem;
   width: auto;
 }
-.hero-image .hero-text h2 span {
+html .hero-image .hero-text h2 span {
   font-weight: 600;
 }
-
-section .intro {
+html section .intro {
   outline: 1px white solid;
 }
-
 @media (pointer: coarse) and (hover: none) {
-  header {
+  html header {
     background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll;
   }
-  header video {
+  html header video {
     display: none;
   }
 }
+
 nav {
   max-width: 100%;
   margin: 0 auto;
@@ -762,9 +763,12 @@ p {
 
 .paralsec3 {
   height: auto;
-  background-image: url("../img/bg-wall.jpg");
 }
-.paralsec3.paral img {
+.paralsec3.paral {
+  background-image: url("../img/bg-dots.jpg");
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.paralsec3 img {
   width: 75%;
   position: relative;
   left: 50%;
@@ -802,6 +806,90 @@ anchors are inline so you need ot make them block to go full width
 
 ol {
   filter: invert(0.5);
+}
+
+.scroll-container {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: Kanit, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.25;
+  animation: pulse 1s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

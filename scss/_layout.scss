@@ -1,175 +1,179 @@
-body {
-  font-family: $font;
-  font-weight: $thin-weight;
-  color: $white;
-  background-color: $dark;
+html {
+  scroll-behavior: smooth;
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba($black, 0.25);
-    z-index: 1;
-  }
+  body {
+    font-family: $font;
+    font-weight: $thin-weight;
+    color: $white;
+    background-color: $dark;
 
-  header {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-
-    video {
+    .overlay {
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: 0;
+      left: 0;
+      height: 100%;
       width: 100%;
-      height: auto;
-      z-index: 0;
-      -ms-transform: translateX(-50%) translateY(-50%);
-      -moz-transform: translateX(-50%) translateY(-50%);
-      -webkit-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
+      background-color: rgba($black, 0.25);
+      z-index: 1;
     }
 
-    .container {
+    header {
       position: relative;
-      z-index: 2;
-      max-width: 90%;
-      // changed to override max-width:1140 from _grid, and fixes navbar on large screens
-    }
-  }
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
 
-  section {
-    &.heading {
-      text-align: left;
-      text-decoration: none;
-      top: 50%;
-      left: 10%;
-    }
-  }
-
-  a#visit-site {
-    position: fixed;
-    right: 0;
-    top: 35%;
-    z-index: 10;
-
-    button {
-      color: $white;
-      border-color: $white;
-      border-width: 1px;
-    }
-
-    button:hover {
-      border-color: transparent;
-      color: $dark;
-      transition: color 0.5s ease, background-color 0.3s ease;
-
-      &.tba {
-        background-color: $tba-green;
+      video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
       }
 
-      &.forpal {
-        background-color: $forpal-blue;
+      .container {
+        position: relative;
+        z-index: 2;
+        max-width: 90%;
+        // changed to override max-width:1140 from _grid, and fixes navbar on large screens
+      }
+    }
+
+    section {
+      &.heading {
+        text-align: left;
+        text-decoration: none;
+        top: 50%;
+        left: 10%;
+      }
+    }
+
+    a#visit-site {
+      position: fixed;
+      right: 0;
+      top: 35%;
+      z-index: 10;
+
+      button {
+        color: $white;
+        border-color: $white;
+        border-width: 1px;
+      }
+
+      button:hover {
+        border-color: transparent;
+        color: $dark;
+        transition: color 0.5s ease, background-color 0.3s ease;
+
+        &.tba {
+          background-color: $tba-green;
+        }
+
+        &.forpal {
+          background-color: $forpal-blue;
+        }
       }
     }
   }
-}
 
-/* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("../img/bg-skyline.jpg");
-  padding-top: 20%;
+  /* The hero image */
+  .hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url("../img/bg-space.jpg");
+    padding-top: 20%;
 
-  .btn-circle.btn-md {
-    width: 50px;
-    height: 50px;
-    padding: 7px 10px;
-    margin: 0 0.25rem !important;
-    border-radius: 25px;
-    border-width: 5px;
-
-    &:hover {
-      background-color: transparent;
-      color: $white;
-      border-color: $white;
-      border-width: 10px;
+    .btn-circle.btn-md {
       width: 50px;
       height: 50px;
       padding: 7px 10px;
       margin: 0 0.25rem !important;
-      transition: border-color 0.5s ease, border-width 0.25s ease,
-        width 0.25s ease, height 0.25s ease;
+      border-radius: 25px;
+      border-width: 5px;
+
+      &:hover {
+        background-color: transparent;
+        color: $white;
+        border-color: $white;
+        border-width: 10px;
+        width: 50px;
+        height: 50px;
+        padding: 7px 10px;
+        margin: 0 0.25rem !important;
+        transition: border-color 0.5s ease, border-width 0.25s ease,
+          width 0.25s ease, height 0.25s ease;
+      }
     }
-  }
 
-  &#home {
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    &#home {
+      height: 100vh;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 
-    #logo {
-      z-index: 10;
+      #logo {
+        z-index: 100;
+      }
+
+      .hero-text {
+        position: relative;
+        z-index: 3;
+      }
+
+      h4 {
+        font-weight: $thin-weight;
+        text-align: left;
+        margin-bottom: -2rem;
+      }
+    }
+
+    &#tba {
+      background-image: url("../img/tba/tba-hero.jpg");
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
     }
 
     .hero-text {
       position: relative;
-      z-index: 3;
-    }
+      z-index: 2;
 
-    h4 {
-      font-weight: $thin-weight;
-      text-align: left;
-      margin-bottom: -2rem;
-    }
-  }
+      h2 {
+        color: $black;
+        background: rgba($white, 0.5);
+        word-spacing: -0.15em;
+        letter-spacing: 3px;
+        padding: 0.25rem;
+        width: auto;
 
-  &#tba {
-    background-image: url("../img/tba/tba-hero.jpg");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .hero-text {
-    position: relative;
-    z-index: 2;
-
-    h2 {
-      color: $black;
-      background: rgba($white, 0.5);
-      word-spacing: -0.15em;
-      letter-spacing: 3px;
-      padding: 0.25rem;
-      width: auto;
-
-      span {
-        font-weight: $thick-weight;
+        span {
+          font-weight: $thick-weight;
+        }
       }
     }
   }
-}
 
-section {
-  .intro {
-    outline: 1px white solid;
+  section {
+    .intro {
+      outline: 1px white solid;
+    }
   }
-}
 
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
-      no-repeat center center scroll;
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+        no-repeat center center scroll;
 
-    video {
-      display: none;
+      video {
+        display: none;
+      }
     }
   }
 }
