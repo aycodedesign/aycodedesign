@@ -46,6 +46,24 @@
   transform: skew(0deg, -30deg);
 }
 
+#objective {
+  display: inline-block;
+  img {
+    &#half {
+      position: relative;
+      left: 25%;
+      transform: translateX(-50%);
+      width: 50%;
+    }
+    &#full {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+  }
+}
+
 @keyframes move {
   25% {
     opacity: 1;

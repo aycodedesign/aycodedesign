@@ -750,7 +750,7 @@ p {
 .paralsec2 img {
   width: 100%;
   height: auto;
-  margin: 0 0 7rem;
+  margin: 0 0 5rem;
 }
 .paralsec1 img#color-type,
 .paralsec2 img#color-type {
@@ -854,6 +854,22 @@ ol {
   right: 0;
   width: 50%;
   transform: skew(0deg, -30deg);
+}
+
+#objective {
+  display: inline-block;
+}
+#objective img#half {
+  position: relative;
+  left: 25%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+#objective img#full {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }
 
 @keyframes move {
