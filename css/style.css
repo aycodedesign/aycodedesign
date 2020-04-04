@@ -72,8 +72,11 @@ html body a#visit-site button:hover.forpal {
 }
 html .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("../img/bg-space.jpg");
+  background-image: url("../img/business-card-display.jpg");
   padding-top: 20%;
+}
+html .hero-image span#dark {
+  color: #303030;
 }
 html .hero-image .btn-circle.btn-md {
   width: 50px;
