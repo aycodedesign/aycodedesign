@@ -70,6 +70,21 @@ html body a#visit-site button:hover.tba {
 html body a#visit-site button:hover.forpal {
   background-color: #13aad8;
 }
+html #objective {
+  display: inline-block;
+}
+html #objective img#half {
+  position: relative;
+  left: 25%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+html #objective img#full {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
 html .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: url("../img/business-card-display.jpg");
@@ -538,7 +553,7 @@ button:hover {
 
 .modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body {
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 .modal-dialog-slideout .modal-content {
@@ -564,6 +579,20 @@ body footer {
   color: #303030;
   background: #ebebeb;
   height: 20em;
+}
+body footer#about {
+  background: #303030;
+  height: auto;
+}
+body footer#about .nav-link {
+  color: #ebebeb !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+body footer#about .navbar-nav > li > a {
+  text-decoration: none;
+  color: #ebebeb;
+  position: relative;
 }
 body footer a .nav-link {
   color: #303030;
@@ -821,6 +850,17 @@ ol {
   z-index: 10;
 }
 
+.scroll-index {
+  position: absolute;
+  z-index: 10;
+  rotate: -90deg;
+}
+.scroll-index .text {
+  position: relative;
+  rotate: 90deg;
+  margin: 0 auto;
+}
+
 .chevron {
   position: absolute;
   width: 28px;
@@ -857,22 +897,6 @@ ol {
   right: 0;
   width: 50%;
   transform: skew(0deg, -30deg);
-}
-
-#objective {
-  display: inline-block;
-}
-#objective img#half {
-  position: relative;
-  left: 25%;
-  transform: translateX(-50%);
-  width: 50%;
-}
-#objective img#full {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
 }
 
 @keyframes move {

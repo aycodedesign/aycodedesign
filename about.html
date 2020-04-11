@@ -51,8 +51,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/portfolio.css" />
-    <title>AYCODE+DESIGN</title>
+    <title>AYCODE+DESIGN | The Breaking Academy</title>
   </head>
 
   <body>
@@ -156,10 +155,6 @@
       <!-- ========== TOP NAVBAR ========== -->
 
       <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <!-- <a class="navbar-brand" href="./index.html">
-          <img src="./img/logo-white.png" alt="aycd logo" width="75px" />
-        </a> -->
-
         <div class="grid__item">
           <a class="link link--ilin navbar-brand" href="./index.html"
             ><span>aubrey </span><span>young</span></a
@@ -199,116 +194,82 @@
       </nav>
     </header>
 
-    <!-- ========== BOTTOM NAVBAR ========== -->
+    <div class="overlay"></div>
 
-    <nav class="bottom-nav navbar navbar-expand-sm fixed-bottom pl-4">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarCustom"
-      >
-        <i class="fa fa-bars fa-lg py-1 text-white"></i>
-      </button>
-      <div class="navbar-collapse collapse cl-effect-13b" id="navbarCustom">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a
-              class="nav-link"
-              href="https://www.linkedin.com/in/aycodedesign/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://github.com/aycodedesign"
-              target="_blank"
-              >Github</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://www.instagram.com/aycode.design/"
-              target="_blank"
-              >Instagram</a
-            >
-          </li>
-        </ul>
+    <!-- First Parallax Section -->
+    <div id="tba" class="paral paralsec">
+      <div class="hero-text pt-5">
+        <h1>
+          THE<span>BREAKING</span>ACADEMY
+        </h1>
       </div>
-    </nav>
 
-    <!-- ========== HERO ========== -->
-
-    <!-- <div class="overlay"></div> -->
-
-    <!-- <video
-        playsinline="playsinline"
-        autoplay="autoplay"
-        muted="muted"
-        loop="loop"
-      >
-        <source src="./img/wave4.webm" type="video/mp4" />
-      </video> -->
-    <!-- <div class="overlay"></div> -->
-
-    <div class="hero-image" id="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <img id="logo" src="./img/logo-horizontal.svg" alt="aycd logo" />
-            <div class="hero-text pt-4">
-              <h4>Aubrey Young <span>&#8226;</span> web + graphic designer</h4>
-              <p><i>practicing digital feng shui, based in LA</i></p>
-            </div>
-          </div>
-          <div class="col-lg-3"></div>
-          <div class="col-lg-3">
-            <div>
-              <div class="scroll-index">
-                <a href="./portfolio.html">
-                  <div class="chevron"></div>
-                  <div class="chevron"></div>
-                  <div class="chevron"></div>
-                </a>
-              </div>
-              <p id="dark">SEE THE WORK</p>
-            </div>
-          </div>
-        </div>
+      <div class="scroll-container">
+        <a href="#objective">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <!-- <span class="text">Scroll down</span> -->
+          <div class="text">Scroll down</div>
+        </a>
       </div>
     </div>
 
-    <!-- <section class="my-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <p>
-              The HTML5 video element uses an mp4 video as a source. Change the
-              source video to add in your own background! The header text is
-              vertically centered using flex utilities that are build into
-              Bootstrap 4.
-            </p>
-            <p>
-              The overlay color can be changed by changing the
-              <code>background-color</code> of the <code>.overlay</code> class
-              in the CSS.
-            </p>
-            <p>
-              Set the mobile fallback image in the CSS by changing the
-              background image of the header element within the media query at
-              the bottom of the CSS snippet.
-            </p>
-            <p class="mb-0">
-              Created by
-              <a href="https://startbootstrap.com">Start Bootstrap</a>
-            </p>
-          </div>
-        </div>
+    <!-- Second Parallax Section -->
+    <div id="objective" class="paral paralsec1 py-5">
+      <div class="description">
+        <h4>OBJECTIVE</h4>
+        <p>
+          Highlights include responsive design on all devices, smooth scrolling,
+          and photo manipulation.
+        </p>
       </div>
-    </section> -->
+    </div>
+
+    <!-- Add More Parallax Sections Here -->
+
+    <footer id="about">
+      <!-- ========== BOTTOM NAVBAR ========== -->
+
+      <nav class="bottom-nav navbar navbar-expand-sm fixed-bottom pl-4">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCustom"
+        >
+          <i class="fa fa-bars fa-lg py-1 text-white"></i>
+        </button>
+        <div class="navbar-collapse collapse cl-effect-13b" id="navbarCustom">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/aycodedesign/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/aycodedesign"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/aycode.design/"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
 
     <script src="./js/script.js"></script>
     <script
