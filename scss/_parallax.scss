@@ -81,6 +81,14 @@ p {
   }
 }
 
+.about {
+  height: auto;
+  width: 75%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .paralsec1,
 .paralsec2 {
   height: auto;
@@ -89,8 +97,22 @@ p {
   left: 50%;
   transform: translateX(-50%);
 
+  #half {
+    position: relative;
+    left: 25%;
+    transform: translateX(-50%);
+    width: 50%;
+  }
+  #full {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
   .description {
-    width: 65%;
+    padding-top: 5rem;
+    width: 75%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);

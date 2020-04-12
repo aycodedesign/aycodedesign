@@ -87,7 +87,7 @@ html #objective img#full {
 }
 html .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("../img/business-card-display.jpg");
+  background-image: url("../img/bg-wdots.jpg");
   padding-top: 20%;
 }
 html .hero-image span#dark {
@@ -156,6 +156,9 @@ html .hero-image .hero-text h2 span {
 }
 html section .intro {
   outline: 1px white solid;
+}
+html #title {
+  text-align: center;
 }
 @media (pointer: coarse) and (hover: none) {
   html header {
@@ -763,6 +766,14 @@ p {
   font-weight: 600;
 }
 
+.about {
+  height: auto;
+  width: 75%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .paralsec1,
 .paralsec2 {
   height: auto;
@@ -771,9 +782,24 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
+.paralsec1 #half,
+.paralsec2 #half {
+  position: relative;
+  left: 25%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+.paralsec1 #full,
+.paralsec2 #full {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
 .paralsec1 .description,
 .paralsec2 .description {
-  width: 65%;
+  padding-top: 5rem;
+  width: 75%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);

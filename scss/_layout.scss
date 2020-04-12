@@ -102,7 +102,7 @@ html {
   /* The hero image */
   .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: url("../img/business-card-display.jpg");
+    background-image: url("../img/bg-wdots.jpg");
     padding-top: 20%;
 
     span#dark {
@@ -186,6 +186,10 @@ html {
     .intro {
       outline: 1px white solid;
     }
+  }
+
+  #title {
+    text-align: center;
   }
 
   @media (pointer: coarse) and (hover: none) {
